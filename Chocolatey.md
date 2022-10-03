@@ -37,6 +37,11 @@ choco install firefox -y
 
 choco install vscode -y
 
-choco install rdiff-backup
+choco install rdiff-backup -y
 
-choco install veeam-endpoint-backup-free
+choco install veeam-endpoint-backup-free -y
+
+choco install vnc-viewer -y
+
+choco install shutup10 -y
+

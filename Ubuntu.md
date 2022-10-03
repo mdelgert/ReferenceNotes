@@ -16,3 +16,18 @@ https://askubuntu.com/questions/1296932/screen-sharing-in-unusable-state-after-r
 4. For the new password enter blank -- you should get a warning that the keyring will always be unlocked.
 5. Reboot and re-enable VNC one more time
 6. Reboot once more to make sure it's still working.
+
+# How to Enable Remote Desktop on Ubuntu Desktop 22.04 LTS and Access it from Windows Remote Desktop Connection App
+https://linuxhint.com/enable-remote-desktop-ubuntu-access-from-windows/
+
+# Ubuntu certified desktops
+https://ubuntu.com/certified/desktops?q=&release=20.04+LTS
+
+# Pending Update of Snap Store
+https://askubuntu.com/questions/1412575/pending-update-of-snap-store
+sudo snap refresh snap-store
+error: cannot refresh "snap-store": snap "snap-store" has running apps (ubuntu-software), pids:
+       2452
+
+kill 2452
+sudo snap refresh snap-store
