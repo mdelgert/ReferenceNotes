@@ -14,3 +14,6 @@ https://askubuntu.com/questions/1410885/how-to-install-jetbrains-toolbox-in-ubun
 https://gist.github.com/greeflas/431bc50c23532eee8a7d6c1d603f3921
 
 https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
+
+# Guide: How to Share A Folder Between Ubuntu/Linux and Windows
+sudo smbpasswd -a Username
