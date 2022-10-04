@@ -4,6 +4,10 @@ https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
 https://www.atlassian.com/git/glossary
 
 ```console
+$ git config --list
+```
+
+```console
 $ git clone https://github.com/mdelgert/ReferenceNotes.git
 ```
 
