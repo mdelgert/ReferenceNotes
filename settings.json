@@ -76,6 +76,26 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "closeOnExit": "graceful",
+                "colorScheme": "GitBash",
+                "commandline": "\"%PROGRAMFILES%\\Git\\usr\\bin\\bash.exe\" --login -i",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "font": 
+                {
+                    "face": "Consolas",
+                    "size": 12
+                },
+                "guid": "{fd5bbcaa-c94e-4d58-9243-c38c4aef36a8}",
+                "historySize": 9001,
+                "icon": "%PROGRAMFILES%\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "GitBash",
+                "padding": "0, 0, 0, 0",
+                "snapOnInput": true,
+                "startingDirectory": "C:\\Source",
+                "useAcrylic": false
             }
         ]
     },
@@ -126,6 +146,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
+        },
+        {
+            "background": "#000000",
+            "black": "#0C0C0C",
+            "blue": "#6060FF",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#BFBFBF",
+            "green": "#00A400",
+            "name": "GitBash",
+            "purple": "#BF00BF",
+            "red": "#BF0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#FFFFFF",
+            "yellow": "#BFBF00"
         },
         {
             "background": "#271F19",
