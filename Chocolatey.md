@@ -46,3 +46,5 @@ choco install vnc-viewer -y
 choco install shutup10 -y
 
 choco install slack -y
+
+choco install microsoftazurestorageexplorer -y
