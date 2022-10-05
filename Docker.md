@@ -16,5 +16,9 @@ docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2022" -
 ```
 
 ```console
-docker version
+docker start MSSQL
+```
+
+```console
+docker stop MSSQL
 ```
