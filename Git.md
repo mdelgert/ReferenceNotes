@@ -1,12 +1,3 @@
-# Use Multiple SSH Keys for Git host websites (Github, Gitlab)
-https://gist.github.com/alejandro-martin/aabe88cf15871121e076f66b65306610
-
-# Multiple SSH Keys settings for different github account
-https://gist.github.com/jexchan/2351996
-
-# Use SSH keys to communicate with GitLab
-https://docs.gitlab.com/ee/user/ssh.html
-
 # How to fix support for password authentication was removed on GitHub
 https://levelup.gitconnected.com/fix-password-authentication-github-3395e579ce74
 
