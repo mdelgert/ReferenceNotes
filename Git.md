@@ -1,3 +1,8 @@
+# How to switch to an existing branch in Git
+https://www.freecodecamp.org/news/git-switch-branch/
+
+git switch -c dev
+
 # How to fix support for password authentication was removed on GitHub
 https://levelup.gitconnected.com/fix-password-authentication-github-3395e579ce74
 
