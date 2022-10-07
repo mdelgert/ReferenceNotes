@@ -1,0 +1,12 @@
+# https://docs.gitlab.com/ee/user/ssh.html
+
+# Gitlab Identity
+Host gitlab.com
+  Hostname gitlab.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/SSH_Key
+
+# Azure Identity
+Host ssh.dev.azure.com
+  IdentityFile ~/.ssh/SSH_Key
+  IdentitiesOnly yes
