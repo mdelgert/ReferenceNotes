@@ -22,3 +22,27 @@ docker start MSSQL
 ```console
 docker stop MSSQL
 ```
+
+# Images
+https://lynxbee.com/how-to-run-ubuntu-18-04-in-docker-container/#.Yz71E3bMJD8
+https://hub.docker.com/_/ubuntu
+
+```console
+docker pull ubuntu
+```
+
+```console
+docker run --name ubuntuTest 
+```
+
+# How to Launch a Docker Container with an Interactive Shell
+https://www.letscloud.io/community/how-to-launch-a-docker-container-with-an-interactive-shell
+
+docker run --name test -d ubuntu
+
+docker run -i -t ubuntu bash
+
+docker run --name test -p 22:22 -i -t ubuntu bash
+
+# How to setup an ssh server within a docker container
+https://dev.to/s1ntaxe770r/how-to-setup-ssh-within-a-docker-container-i5i
