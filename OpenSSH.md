@@ -27,6 +27,11 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 
 New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\WINDOWS\System32\bash.exe" -PropertyType String -Force
 
+# Modify .bashrc add the following line to the end so default is home directory
+cd ~
+
+[How to default to other directory instead of home directory](https://stackoverflow.com/questions/7017143/how-to-default-to-other-directory-instead-of-home-directory)
+
 # Install the OpenSSH Client
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 
