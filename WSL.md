@@ -1,4 +1,5 @@
 [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+
 wsl --install
 
 [Download the Linux kernel update package](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
@@ -7,6 +8,9 @@ wsl --install
 
 # See status
 wsl --status
+
+# Update WSL
+wsl --update
 
 # How do I uninstall a WSL Distribution?
 wsl --unregister Ubuntu
