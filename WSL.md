@@ -10,6 +10,7 @@ wsl --status
 
 # How do I uninstall a WSL Distribution?
 wsl --unregister Ubuntu
+wsl --unregister Ubuntu-20.04
 
 # Change the default Linux distribution installed
 wsl --install -d Ubuntu-20.04
