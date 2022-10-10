@@ -17,3 +17,13 @@ https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
 
 # Guide: How to Share A Folder Between Ubuntu/Linux and Windows
 sudo smbpasswd -a Username
+
+# How to run sudo command without a password on a Linux or Unix
+https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/
+
+cp /etc/sudoers /etc/sudoers.bak
+
+visudo
+
+# Allow sudo without password prompt
+mdelgert ALL=(ALL) NOPASSWD:ALL
