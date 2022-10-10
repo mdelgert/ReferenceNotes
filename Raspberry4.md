@@ -13,3 +13,6 @@ https://www.elluminetpress.com/2020/03/12/connect-to-your-raspberry-pi-remotely/
 
 # HOW TO ACCESS THE RASPBERRY PI DESKTOP WITH A REMOTE DESKTOP CONNECTION
 https://www.circuitbasics.com/access-raspberry-pi-desktop-remote-connection/
+
+# How do I turn off my Raspberry Pi?
+sudo halt -p
