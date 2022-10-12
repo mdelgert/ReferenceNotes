@@ -38,6 +38,12 @@ Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 # Install the OpenSSH Server
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
+# Uninstall the OpenSSH Client
+Remove-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+
+# Uninstall the OpenSSH Server
+Remove-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+
 [cannot-run-wsl2-over-ssh-on-windows-11](https://superuser.com/questions/1714736/cannot-run-wsl2-over-ssh-on-windows-11)
 
 The ability to launch WSL from within SSH, would be to uninstall the Preview version and then re-install with wsl --install in Windows 11.

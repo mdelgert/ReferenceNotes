@@ -54,3 +54,5 @@ choco install ngrok -y
 choco install winscp -y
 
 choco install cmder -y
+
+choco install zoom -y

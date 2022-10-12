@@ -18,6 +18,6 @@ Host ssh.dev.azure.com
 	IdentitiesOnly yes
 
 # Local Network
-Host SAMSUNG1 samsung1 XPS1 xps1 pi1 PI1
+Host pi11 PI1 pi2 PI2 s1 S1 xps1 XPS1
 	IdentityFile ~/.ssh/SSH_Key
 	IdentitiesOnly yes
