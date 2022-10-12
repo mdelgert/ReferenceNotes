@@ -48,3 +48,9 @@ choco install shutup10 -y
 choco install slack -y
 
 choco install microsoftazurestorageexplorer -y
+
+choco install ngrok -y
+
+choco install winscp -y
+
+choco install cmder -y
