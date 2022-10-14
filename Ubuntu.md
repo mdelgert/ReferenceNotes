@@ -11,7 +11,10 @@ apt install net-tools
 # Fix sudo https://linuxconfig.org/configure-sudo-without-password-on-ubuntu-20-04-focal-fossa-linux
 sudo visudo
 
-%sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+%sudo ALL=(ALL:ALL) NOPASSWD:ALL
+
+# Add sudo to one single account
+youraccount ALL=(ALL) NOPASSWD:ALL
 
 # Disable keyring 
 https://askubuntu.com/questions/1296932/screen-sharing-in-unusable-state-after-rebooting
