@@ -48,6 +48,7 @@ int main(int argc, char *argv[]){
   return (int)res;
 }
 
-gcc test.c -o test
+gcc test.c -o test -lcurl
 
 ./test
+
