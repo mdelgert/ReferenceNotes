@@ -17,6 +17,16 @@ docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2022" -
 ```
 
 ```console
+docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2022" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+```
+
+https://www.cloudiqtech.com/install-run-sql-server-docker-container-mac/
+
+```console
+docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2022" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-CU18-ubuntu-20.04
+```
+
+```console
 docker start MSSQL
 ```
 
