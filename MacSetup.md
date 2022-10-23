@@ -14,3 +14,4 @@ chmod 600 ~/.ssh/SSH_Key
 
 ssh-add -K SSH_Key
 
+https://iterm2colorschemes.com/
