@@ -14,3 +14,4 @@ chmod 600 ~/.ssh/SSH_Key
 
 ssh-add -K SSH_Key
 
+cat ~/.ssh/SSH_Key.pub | ssh mdelgert@m1 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
