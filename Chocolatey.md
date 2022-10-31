@@ -56,3 +56,7 @@ choco install winscp -y
 choco install cmder -y
 
 choco install zoom -y
+
+choco install vb-cable -y
+
+choco install vlc -y

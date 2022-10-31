@@ -24,3 +24,11 @@ wsl -l -o
 
 # Run distro
 wsl -d Ubuntu-20.04
+
+# Setting up the GUI
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+
+https://medium.com/@japheth.yates/the-complete-wsl2-gui-setup-2582828f4577
+
+https://github.com/microsoft/wslg/wiki/Diagnosing-%22cannot-open-display%22-type-issues-with-WSLg
+
