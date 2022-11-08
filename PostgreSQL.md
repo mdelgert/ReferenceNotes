@@ -12,5 +12,20 @@ https://www.timescale.com/blog/how-to-install-psql-on-mac-ubuntu-debian-windows/
 sudo apt-get install postgresql-client
 ```
 
-```console
-```
+https://www.ionos.com/digitalguide/server/configuration/solve-the-postgresql-error-psql-fatal-database-root-does-not-exist/
+
+su - postgres
+
+psql
+
+https://dba.stackexchange.com/questions/1285/how-do-i-list-all-databases-and-tables-using-psql
+https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql/
+
+# List database
+\l
+
+# Change database
+\c database
+
+# List tables
+\dt
