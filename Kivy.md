@@ -1,0 +1,9 @@
+https://code.visualstudio.com/docs/python/python-tutorial
+https://kivy.org/doc/stable/gettingstarted/installation.html#install-pip
+https://medium.com/edureka/kivy-tutorial-9a0f02fe53f5
+https://kivy.org/doc/stable/guide/packaging-android.html
+https://buildozer.readthedocs.io/en/latest/installation.html#targeting-android
+https://github.com/kivy/buildozer
+https://python-for-android.readthedocs.io/en/latest/quickstart/#installation
+https://www.python.org/downloads/release/python-31010/
+https://cython.readthedocs.io/en/latest/src/quickstart/install.html
