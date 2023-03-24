@@ -1,3 +1,6 @@
+https://web.archive.org/web/20201112010739/https://coreos.com/blog/grpc-protobufs-swagger.html
+https://github.com/philips/grpc-gateway-example
+
 sudo apt-get install build-essential
 
 git clone https://github.com/iamrajiv/helloworld-grpc-gateway.git
