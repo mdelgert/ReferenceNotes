@@ -20,7 +20,7 @@ $authorizedKey = Get-Content -Path $env:USERPROFILE\.ssh\SSH_Key.pub
 $remotePowershell = "powershell New-Item -Force -ItemType Directory -Path $env:USERPROFILE\.ssh; Add-Content -Force -Path $env:USERPROFILE\.ssh\authorized_keys -Value '$authorizedKey'"
 
 # Connect to your server and run the PowerShell using the $remotePowerShell variable
-ssh mdelgert@XPS1 $remotePowershell
+ssh user@machine $remotePowershell
 
 # Get the public key file generated previously on your client
 $authorizedKey = Get-Content -Path $env:USERPROFILE\.ssh\SSH_Key.pub
@@ -29,4 +29,4 @@ $authorizedKey = Get-Content -Path $env:USERPROFILE\.ssh\SSH_Key.pub
 $remotePowershell = "powershell Add-Content -Force -Path $env:ProgramData\ssh\administrators_authorized_keys -Value '$authorizedKey';icacls.exe ""$env:ProgramData\ssh\administrators_authorized_keys"" /inheritance:r /grant ""Administrators:F"" /grant ""SYSTEM:F"""
 
 # Connect to your server and run the PowerShell using the $remotePowerShell variable
-ssh mdelgert@XPS1 $remotePowershell
+ssh userXPS1 $remotePowershell

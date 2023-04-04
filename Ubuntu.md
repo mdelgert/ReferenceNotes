@@ -3,7 +3,6 @@ https://stackabuse.com/how-to-fix-warning-unprotected-private-key-file-on-mac-an
 
 sudo chmod 600 ~/.ssh/SSH_Key
 
-
 # Install ssh
 apt-get install openssh-server
 apt install net-tools

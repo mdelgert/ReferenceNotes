@@ -18,6 +18,6 @@ create mask = 0777
 directory mask = 0777
 public = no
 
-sudo smbpasswd -a mdelgert
+sudo smbpasswd -a user
 
 sudo systemctl restart smbd

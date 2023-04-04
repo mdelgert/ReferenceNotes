@@ -26,4 +26,4 @@ cp /etc/sudoers /etc/sudoers.bak
 visudo
 
 # Allow sudo without password prompt
-mdelgert ALL=(ALL) NOPASSWD:ALL
+user ALL=(ALL) NOPASSWD:ALL

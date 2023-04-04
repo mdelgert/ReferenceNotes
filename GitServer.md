@@ -16,7 +16,7 @@ cd /Source/PrivateGit
 mkdir test
 cd test
 git init
-git remote add test mdelgert@pi1:/home/mdelgert/Source/PrivateGit/test
+git remote add test user@pi1:/home/user/Source/PrivateGit/test
 touch test
 echo "hello git" >> test
 git add .
@@ -24,4 +24,4 @@ git commit -m "add test"
 git push test master
 
 # Remote clone
-git clone mdelgert@pi1:/home/mdelgert/Source/PrivateGit/test
+git clone user@machine:/home/user/Source/PrivateGit/test

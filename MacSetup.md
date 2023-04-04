@@ -16,4 +16,4 @@ ssh-add -K SSH_Key
 
 https://iterm2colorschemes.com/
 
-cat ~/.ssh/SSH_Key.pub | ssh mdelgert@m1 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+cat ~/.ssh/SSH_Key.pub | ssh user@m1 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"

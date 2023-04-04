@@ -27,19 +27,15 @@ wsl -d Ubuntu-20.04
 
 # Setting up the GUI
 https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
-
 https://medium.com/@japheth.yates/the-complete-wsl2-gui-setup-2582828f4577
-
 https://github.com/microsoft/wslg/wiki/Diagnosing-%22cannot-open-display%22-type-issues-with-WSLg
-
-
 https://github.com/microsoft/WSL/issues/8072
 https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771525(v=ws.10)?redirectedfrom=MSDN
 https://learn.microsoft.com/en-us/windows/wsl/store-release-notes
 https://answers.microsoft.com/en-us/windows/forum/all/kb4565503-installed-then-wsl-2-failed-to-start/25794c4f-0b20-465e-bbdb-a8af3d9e0e88
 https://github.com/microsoft/WSL/issues/4920
 
-C:\Users\mdelgert\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\ext4.vhdx
+C:\Users\user\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\ext4.vhdx
 
 https://github.com/microsoft/WSL/issues/8072
 

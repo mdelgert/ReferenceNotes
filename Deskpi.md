@@ -31,4 +31,4 @@ umount /dev/sda1
 
 mount -a
 
-chown -R mdelgert:mdelgert /mnt/data
+chown -R user:user /mnt/data

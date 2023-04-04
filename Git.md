@@ -17,7 +17,7 @@ https://levelup.gitconnected.com/fix-password-authentication-github-3395e579ce74
 * Finally click Generate Token
 
 ```console
-$ git remote set-url origin https://GithubToken@github.com/mdelgert/ReferenceNotes.git
+$ git remote set-url origin https://GithubToken@github.com/user/ReferenceNotes.git
 ```
 
 # Reference
@@ -30,15 +30,11 @@ $ git config --list
 ```
 
 ```console
-$ git config --global user.name "Matthew Elgert"
+$ git config --global user.name "First lastname"
 ```
 
 ```console
-$ git config --global user.email "mdelgert@yahoo.com"
-```
-
-```console
-$ git clone https://github.com/mdelgert/ReferenceNotes.git
+$ git config --global user.email "user@yahoo.com"
 ```
 
 ```console
