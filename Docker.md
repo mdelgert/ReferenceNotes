@@ -14,14 +14,22 @@ docker version
 [Microsoft SQL Server](https://hub.docker.com/_/microsoft-mssql-server)
 
 ```console
-docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2022" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2023" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
+```console
+docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2023" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+```
+
+```console
+docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2023" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
 ```
 
 https://www.cloudiqtech.com/install-run-sql-server-docker-container-mac/
 https://medium.com/geekculture/docker-express-running-a-local-sql-server-on-your-m1-mac-8bbc22c49dc9
 
 ```console
-docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2022" -p 1433:1433 -d mcr.microsoft.com/azure-sql-edge
+docker run --name MSSQL -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password2023" -p 1433:1433 -d mcr.microsoft.com/azure-sql-edge
 ```
 
 ```console
