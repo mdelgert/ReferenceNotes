@@ -1,4 +1,13 @@
 ```console
+$ sudo snap install slack
+$ sudo snap install skype
+$ sudo snap install teams-for-linux
+$ sudo snap install postman
+$ sudo snap install chromium
+$ sudo snap install code
+```
+
+```console
 $ sudo apt install git
 ```
 

@@ -12,6 +12,24 @@ https://www.makeuseof.com/how-to-install-visual-studio-code-ubuntu/
 https://askubuntu.com/questions/1411104/unable-to-update-snap-store-cannot-refresh-snap-store-snap-snap-store-ha
 https://www.sysprobs.com/fix-ubuntu-software-center-not-loading-issue
 https://www.maketecheasier.com/ubuntu-software-center-not-working-fixes/
+https://flathub.org/
+https://docs.docker.com/engine/install/ubuntu/
+https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
+
+# Docker setup
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo docker run hello-world
+
+# How to fix docker: Got permission denied while trying to connect to the Docker daemon socket
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+su -s ${USER}
+
+# Use an Alternative to snap center
+sudo apt install gnome-software
+sudo apt install synaptic
+sudo apt install flatpak
 
 # 6 Ways To Fix The “Ubuntu Software Center Not Loading” Issue
 killall snap-store
@@ -29,6 +47,7 @@ sudo apt update
 
 # Default packages
 sudo apt-get install openssh-server
+sudo apt-get install curl
 
 # update snap store
 snap-store --quit && sudo snap refresh snap-store
