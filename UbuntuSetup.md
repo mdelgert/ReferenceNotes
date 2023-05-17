@@ -10,6 +10,21 @@ https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
 https://itsfoss.com/laptop-lid-suspend-ubuntu/#:~:text=Method%201%3A%20Using%20GNOME%20Tweaks&text=Once%20installed%2C%20start%20the%20Tweaks,laptop%20lid%20is%20closed'%20button.&text=That's%20it.,for%20changes%20to%20take%20effect.
 https://www.makeuseof.com/how-to-install-visual-studio-code-ubuntu/
 https://askubuntu.com/questions/1411104/unable-to-update-snap-store-cannot-refresh-snap-store-snap-snap-store-ha
+https://www.sysprobs.com/fix-ubuntu-software-center-not-loading-issue
+https://www.maketecheasier.com/ubuntu-software-center-not-working-fixes/
+
+# 6 Ways To Fix The “Ubuntu Software Center Not Loading” Issue
+killall snap-store
+snap-store refresh
+killall gnome-software
+gnome-software refresh
+sudo apt update && sudo apt -y upgrade
+sudo apt install gnome-software
+sudo apt update && sudo apt upgrade
+sudo snap install snap-store
+# Fix-5: Clear the Cache
+sudo apt clean
+sudo apt update
 
 # Default packages
 sudo apt-get install openssh-server
