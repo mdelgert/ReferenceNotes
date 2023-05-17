@@ -22,6 +22,7 @@ sudo apt update && sudo apt -y upgrade
 sudo apt install gnome-software
 sudo apt update && sudo apt upgrade
 sudo snap install snap-store
+
 # Fix-5: Clear the Cache
 sudo apt clean
 sudo apt update
