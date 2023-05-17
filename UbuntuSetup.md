@@ -26,6 +26,9 @@ sudo groupadd docker
 sudo usermod -aG docker ${USER}
 su -s ${USER}
 
+# If you check your groups and docker groups is not listed even after logging out, you may have to restart Ubuntu. To avoid that, you can use the newgrp command liks this:
+newgrp docker
+
 # Use an Alternative to snap center
 sudo apt install gnome-software
 sudo apt install synaptic
