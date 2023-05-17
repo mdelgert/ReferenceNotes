@@ -16,9 +16,15 @@ https://flathub.org/
 https://docs.docker.com/engine/install/ubuntu/
 https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
 
+# Apps
+sudo apt install gnome-tweaks
+sudo apt install solaar
+sudo apt install openssh-server
+sudo apt install curl
+
 # How to Configure Ubuntu’s Built-In Firewall
 https://www.howtogeek.com/115116/how-to-configure-ubuntus-built-in-firewall/
-sudo apt-get install gufw
+sudo apt install gufw
 
 # Docker setup
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -51,10 +57,6 @@ sudo snap install snap-store
 # Fix-5: Clear the Cache
 sudo apt clean
 sudo apt update
-
-# Default packages
-sudo apt-get install openssh-server
-sudo apt-get install curl
 
 # update snap store
 snap-store --quit && sudo snap refresh snap-store
