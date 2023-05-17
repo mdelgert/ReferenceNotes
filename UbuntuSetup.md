@@ -16,6 +16,10 @@ https://flathub.org/
 https://docs.docker.com/engine/install/ubuntu/
 https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
 
+# How to Configure Ubuntu’s Built-In Firewall
+https://www.howtogeek.com/115116/how-to-configure-ubuntus-built-in-firewall/
+sudo apt-get install gufw
+
 # Docker setup
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
