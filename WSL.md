@@ -48,3 +48,10 @@ Start Menu -> Settings -> Apps
 
 Find and uninstall Windows Subsystem For Linux Preview.
 Hope it could help everyone
+
+# GUI apps
+apt install nautilus -y
+apt install neofetch
+
+https://www.windowscentral.com/how-add-gui-package-manager-ubuntu-windows-subsystem-linux-wsl
+sudo apt install synaptic
