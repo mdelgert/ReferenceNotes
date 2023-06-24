@@ -1,3 +1,6 @@
+https://www.reddit.com/r/pikvm/comments/qci0zi/hostname_on_pikvm_on_same_network_issue/
+sudo hostnamectl set-hostname pikvm2
+
 https://pikvm.org/
 
 https://kaydron1000.github.io/pikvm/
