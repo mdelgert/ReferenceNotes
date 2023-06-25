@@ -1,3 +1,9 @@
+# SSD Setup
+https://www.amazon.com/Argon-Raspberry-Support-B-Key-Compatible/dp/B08MJ3CSW7?ref_=ast_sto_dp
+
+https://www.amazon.com/Western-Digital-SA510-Internal-Solid/dp/B09ZYNHPW2/ref=sr_1_4?crid=1CXQOR68S8FVA&keywords=2280+M.2+sata+ssd&qid=1687668924&sprefix=2280+m.2+sata+ssd%2Caps%2C99&sr=8-4&ufe=app_do%3Aamzn1.fos.18ed3cb5-28d5-4975-8bc7-93deae8f9840
+
+# Links
 https://all3dp.com/2/raspberry-pi-4-firmware-update-tutorial/
 https://www.raspberrypi.com/documentation/computers/raspberry-pi.html
 https://linuxhint.com/raspberry-pi-sd-card-speed-test/
