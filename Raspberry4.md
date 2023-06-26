@@ -1,3 +1,26 @@
+# Stress tests and temperature plots for the Raspberry Pi
+https://www.zdnet.com/article/how-to-overclock-and-stress-test-your-raspberry-pi/
+https://github.com/nschloe/stressberry
+sudo apt install stress
+sudo pip3 install stressberry
+
+# How to Setup a Raspberry Pi Samba Server
+https://pimylifeup.com/raspberry-pi-samba/
+sudo apt-get install samba samba-common-bin
+mkdir /home/pi/shared
+sudo nano /etc/samba/smb.conf
+sudo smbpasswd -a pi
+sudo systemctl restart smbd
+
+# Add to bottom
+[shared]
+path = /home/pi/shared
+writeable=Yes
+create mask=0777
+directory mask=0777
+public=no
+# Updating and Upgrading Raspberry Pi OS
+https://www.raspberrypi.com/documentation/computers/os.html
 # SSD Setup
 https://www.amazon.com/Argon-Raspberry-Support-B-Key-Compatible/dp/B08MJ3CSW7?ref_=ast_sto_dp
 
