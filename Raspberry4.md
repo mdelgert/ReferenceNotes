@@ -1,3 +1,8 @@
+# Enabling TRIM on an external SSD on a Raspberry Pi
+https://www.jeffgeerling.com/blog/2020/enabling-trim-on-external-ssd-on-raspberry-pi
+https://github.com/muhkuh-sys/raspberry_enable_trim
+https://www.tomshardware.com/news/maker-breaks-down-how-the-raspberry-pi-supports-trim-on-ssds
+
 # The Ultimate Guide to Backup and Restore your Raspberry Pi
 https://raspberrytips.com/backup-raspberry-pi/
 
