@@ -1,3 +1,15 @@
+# PiShrink
+https://www.tomshardware.com/how-to/back-up-raspberry-pi-as-disk-image
+https://github.com/Drewsif/PiShrink
+
+lsblk
+sudo fdisk -l
+
+sudo dd if=/dev/mmcblk0 of=/home/mdelgert/Backups/test.img bs=1M status=progress
+sudo dd if=/dev/sda of=/home/mdelgert/Backups/test.img bs=1M status=progress
+sudo dd if=/dev/sda | gzip > /home/mdelgert/Backups/test.img.gz
+sudo dd if=/dev/sda status=progress | gzip > /home/mdelgert/Backups/test.img.gz
+
 # Pi-Apps
 https://pi-apps.io/
 
