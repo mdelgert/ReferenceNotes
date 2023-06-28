@@ -1,3 +1,9 @@
+# Raspberry pi backup to another raspberry pi
+sudo apt install rsync
+rsync -avz --progress /path/to/source/ pi@<destination_IP>:/path/to/backup/
+tar -czvf backup.tar.gz /path/to/folder
+scp backup.tar.gz username@server_ip:/remote/path
+
 # Stress Testing Your Raspberry Pi (for Cooling and Overclocking)
 sudo apt-get install stress
 
