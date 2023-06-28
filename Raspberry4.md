@@ -1,3 +1,10 @@
+# Stress Testing Your Raspberry Pi (for Cooling and Overclocking)
+sudo apt-get install stress
+
+wget https://raw.githubusercontent.com/ssvb/cpuburn-arm/master/cpuburn-a53.S
+
+gcc -o cpuburn-a53 cpuburn-a53.S
+
 # PiShrink
 https://www.tomshardware.com/how-to/back-up-raspberry-pi-as-disk-image
 https://github.com/Drewsif/PiShrink
