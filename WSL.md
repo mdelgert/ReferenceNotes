@@ -18,6 +18,7 @@ wsl --unregister Ubuntu-20.04
 
 # Change the default Linux distribution installed
 wsl --install -d Ubuntu-20.04
+wsl --install -d Ubuntu-22.04
 
 # to see a list of available Linux distributions available for download
 wsl -l -o
