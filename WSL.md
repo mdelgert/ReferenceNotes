@@ -1,3 +1,10 @@
+# WSL Backup
+wsl --export Ubuntu-22.04 C:\Backups\20233006_V1_Ubuntu22.04.tar
+wsl --import Test C:\Data\Test C:\Backups\20233006_V1_Ubuntu22.04.tar
+
+# Show all instances installed
+wsl --list --verbose
+
 [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 wsl --install
