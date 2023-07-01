@@ -1,3 +1,8 @@
+# The warning message you received is related to the storage space usage within your WSLv2 environment, specifically the VHDX file that represents the virtual hard disk for # your WSL instance. The warning suggests that you may need to optimize the VHDX file to prevent running out of storage space.
+wsl --shutdown
+%USERPROFILE%\AppData\Local\Packages\<WSL-DISTRIBUTION-NAME>\LocalState
+Optimize-VHD -Path <VHDX-PATH> -Mode Full
+
 # WSL backup
 wsl --export Ubuntu-22.04 C:\Backups\20233006_V1_Ubuntu22.04.tar
 wsl --export Ubuntu-22.04 C:\Backups\20233006_V2_Ubuntu22.04.tar
