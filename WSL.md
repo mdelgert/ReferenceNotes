@@ -1,5 +1,16 @@
+# How to Shrink a WSL2 Virtual Disk - https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/
+wsl --list --verbose
+wsl --shutdown
+diskpart
+select vdisk file="%USERPROFILE%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc\LocalState\ext4.vhdx"
+compact vdisk
+
+# The windows utility diskpart can now be used to shrink Virtual Hard Disk (vhdx) files provided you freed up the space inside it by deleting any unnecessary files.
+https://stackoverflow.com/questions/70946140/docker-desktop-wsl-ext4-vhdx-too-large
+
 # The warning message you received is related to the storage space usage within your WSLv2 environment, specifically the VHDX file that represents the virtual hard disk for # your WSL instance. The warning suggests that you may need to optimize the VHDX file to prevent running out of storage space.
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Management-PowerShell
+
 wsl --shutdown
 %USERPROFILE%\AppData\Local\Packages\<WSL-DISTRIBUTION-NAME>\LocalState
 wsl Optimize-VHD -Path <VHDX-PATH> -Mode Full
