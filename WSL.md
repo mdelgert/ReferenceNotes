@@ -1,9 +1,22 @@
-# WSL Backup
+# WSL backup
 wsl --export Ubuntu-22.04 C:\Backups\20233006_V1_Ubuntu22.04.tar
+wsl --export Ubuntu-22.04 C:\Backups\20233006_V2_Ubuntu22.04.tar
+
+# WSL restore
 wsl --import Test C:\Data\Test C:\Backups\20233006_V1_Ubuntu22.04.tar
+
+# Here's how you can configure passwordless sudo access in WSL Ubuntu:
+sudo visudo
+username ALL=(ALL) NOPASSWD: ALL
+
+# To set a default WSL (Windows Subsystem for Linux) distribution in Windows 10 or Windows 11, you can follow these steps:
+wsl --set-default Ubuntu-22.04
 
 # Show all instances installed
 wsl --list --verbose
+
+# WSL installation location: 
+C:\Users\<Username>\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_<RandomString>
 
 [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
