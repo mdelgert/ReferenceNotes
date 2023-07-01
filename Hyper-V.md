@@ -8,3 +8,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Tools-All
 
 # Install the entire Hyper-V stack (hypervisor, services, and tools)
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+
+# Enable disable from command
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
