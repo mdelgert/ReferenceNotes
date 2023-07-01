@@ -2,6 +2,10 @@
 wsl --export Ubuntu-22.04 C:\Backups\20233006_V1_Ubuntu22.04.tar
 wsl --export Ubuntu-22.04 C:\Backups\20233006_V2_Ubuntu22.04.tar
 
+# WSL enable history
+shopt histreedit && echo "History not discarded" || echo "History discarded"
+shopt -u histreedit
+
 # WSL restore
 wsl --import Test C:\Data\Test C:\Backups\20233006_V1_Ubuntu22.04.tar
 
