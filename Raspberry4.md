@@ -1,3 +1,10 @@
+# Make a Keyboard Raspberry Pi Zero W
+https://davesteele.github.io/raspberrypi/2021/04/18/keyboard-jiggler/
+https://github.com/raspberrypisig/pizero-usb-hid-keyboard
+https://gist.githubusercontent.com/davesteele/276a17315cff728bb5932c59329da850/raw/f3b4912418679e095be82a81acd05d557448449c/tickle.py
+https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/
+https://forums.raspberrypi.com/viewtopic.php?t=234495
+
 # Raspberry pi backup to another raspberry pi
 sudo apt install rsync
 rsync -avz --progress /path/to/source/ pi@<destination_IP>:/path/to/backup/
