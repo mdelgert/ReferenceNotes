@@ -8,6 +8,15 @@
 
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 
+# Remove all previous versions
+Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*' | Remove-WindowsCapability -Online
+
+# Install the client
+dism /online /Add-Capability /CapabilityName:OpenSSH.Client~~~~0.0.1.0
+
+# Install the server
+dism /online /Add-Capability /CapabilityName:OpenSSH.Server~~~~0.0.1.0
+
 # Start the sshd service
 Start-Service sshd
 
