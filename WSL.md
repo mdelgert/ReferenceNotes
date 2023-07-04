@@ -1,6 +1,13 @@
-PowerShell.exe -ExecutionPolicy Bypass
+# WSL INstall
 
+# Cleanup
+https://superuser.com/questions/1714736/cannot-run-wsl2-over-ssh-on-windows-11
+Remove all linux installs from the app store
+remove windows features virtual platform and wsl
+
+# Add WSL folders to exclusion list
 https://gist.github.com/noelbundick/9c804a710eb76e1d6a234b14abf42a52#file-excludewsl-ps1
+PowerShell.exe -ExecutionPolicy Bypass
 
 # How to Shrink a WSL2 Virtual Disk - https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/
 wsl --list --verbose
