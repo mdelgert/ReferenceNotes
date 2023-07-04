@@ -1,3 +1,7 @@
+PowerShell.exe -ExecutionPolicy Bypass
+
+https://gist.github.com/noelbundick/9c804a710eb76e1d6a234b14abf42a52#file-excludewsl-ps1
+
 # How to Shrink a WSL2 Virtual Disk - https://stephenreescarter.net/how-to-shrink-a-wsl2-virtual-disk/
 wsl --list --verbose
 wsl --shutdown
