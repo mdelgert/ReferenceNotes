@@ -1,3 +1,6 @@
+# Configuring SSH access into WSL 1 and WSL 2
+https://jmmv.dev/2022/02/wsl-ssh-access.html
+
 # WSL Install
 https://pureinfotech.com/install-wsl-windows-11/#:~:text=To%20install%20WSL%20on%20Windows,d%20DISTRO%2DNAME%E2%80%9D%20command.
 wsl --install

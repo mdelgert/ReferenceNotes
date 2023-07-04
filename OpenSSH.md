@@ -1,3 +1,7 @@
+# Configuring SSH Public Key Authentication on Windows
+https://woshub.com/using-ssh-key-based-authentication-on-windows/
+cat "C:\ProgramData\ssh\sshd_config"| Select-String "Authentication"
+
 # Key-based authentication in OpenSSH for Windows
 https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement
 
