@@ -1,9 +1,25 @@
-# Reference
-https://hub.docker.com/search?q=
-https://hub.docker.com/
-https://github.com/docker
-https://github.com/docker/getting-started
-https://devopscube.com/build-docker-image/
+# Install Docker on Windows (WSL) without Docker Desktop
+https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9
+
+# https://nickjanetakis.com/blog/install-docker-in-wsl-2-without-docker-desktop
+# https://github.com/nickjj?tab=repositories&q=docker-*-example
+# Install Docker, you can ignore the warning from Docker about using WSL
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# Add your user to the Docker group
+sudo usermod -aG docker $USER
+
+# Install Docker Compose v2
+sudo apt-get update && sudo apt-get install docker-compose-plugin
+
+# Sanity check that both tools were installed successfully
+docker --version
+docker compose version
+
+# Using Ubuntu 22.04 or Debian 10 / 11? You need to do 1 extra step for iptables
+# compatibility, you'll want to choose option (1) from the prompt to use iptables-legacy.
+sudo update-alternatives --config iptables
 
 # Commands
 
@@ -70,3 +86,10 @@ https://dev.to/s1ntaxe770r/how-to-setup-ssh-within-a-docker-container-i5i
 https://docs.docker.com/compose/extends/
 https://docs.docker.com/get-started/02_our_app/
 https://dev.to/natterstefan/docker-tip-how-to-get-host-s-ip-address-inside-a-docker-container-5anh
+
+# Reference
+https://hub.docker.com/search?q=
+https://hub.docker.com/
+https://github.com/docker
+https://github.com/docker/getting-started
+https://devopscube.com/build-docker-image/

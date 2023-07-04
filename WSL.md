@@ -1,4 +1,9 @@
-# WSL INstall
+# WSL Install
+https://pureinfotech.com/install-wsl-windows-11/#:~:text=To%20install%20WSL%20on%20Windows,d%20DISTRO%2DNAME%E2%80%9D%20command.
+wsl --install
+
+# Install Docker in WSL 2 without Docker Desktop
+https://nickjanetakis.com/blog/install-docker-in-wsl-2-without-docker-desktop
 
 # Cleanup
 https://superuser.com/questions/1714736/cannot-run-wsl2-over-ssh-on-windows-11
