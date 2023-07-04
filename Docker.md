@@ -1,3 +1,14 @@
+# Containerize an application
+https://docs.docker.com/get-started/02_our_app/
+
+git clone https://github.com/docker/getting-started.git
+docker build -t getting-started .
+docker run -d -p 80:80 getting-started
+
+# Or simple test from docker
+docker run -d -p 80:80 docker/getting-started
+http://localhost/tutorial/
+
 # Install Docker on Windows (WSL) without Docker Desktop
 https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9
 
