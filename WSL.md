@@ -1,4 +1,15 @@
+https://patrick.wagstrom.net/weblog/2021/11/26/a-better-ssh-for-wsl2/
+
+
+
+
+https://dev.to/composite/a-tiny-but-perfect-guide-how-to-install-wsl-2-on-windows-server-2022-1a8f
+https://prolincur.com/blog/wslssh/
+
+
+
 # Configuring SSH access into WSL 1 and WSL 2
+https://linux.how2shout.com/how-to-start-wsl-services-automatically-on-ubuntu-with-windows-10-startup/
 https://jmmv.dev/2022/02/wsl-ssh-access.html
 https://www.youtube.com/watch?v=VjkE4dqdHX8&t=190
 https://www.hanselman.com/blog/how-to-ssh-into-wsl2-on-windows-10-from-an-external-machine
@@ -6,6 +17,10 @@ https://gist.github.com/daehahn/497fa04c0156b1a762c70ff3f9f7edae?WT.mc_id=-blog-
 https://aspiringcraftsman.com/2022/07/01/ssh-on-wsl.html
 
 sudo apt install openssh-server
+
+sudo ssh-keygen -A
+
+
 sudo systemctl enable ssh
 sudo systemctl status ssh
 sudo nano /etc/wsl.conf
@@ -29,6 +44,13 @@ sudo service ssh restart
 sudo sh -c "echo '${USER} ALL=(root) NOPASSWD: /usr/sbin/service ssh start' >/etc/sudoers.d/service-ssh-start"
 netsh advfirewall firewall delete rule name="OpenSSH Server (sshd) for WSL"
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server (sshd) for WSL' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+
+# WSL Startup
+wsl sudo service ssh start
+
+# Setup port proxy to WSL
+netsh interface portproxy delete v4tov4 listenport=22 listenaddress=0.0.0.0 protocol=tcp
+netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=172.19.50.237
 
 # WSL Install
 https://pureinfotech.com/install-wsl-windows-11/#:~:text=To%20install%20WSL%20on%20Windows,d%20DISTRO%2DNAME%E2%80%9D%20command.
