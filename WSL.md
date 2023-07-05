@@ -1,3 +1,28 @@
+# It appears that Microsoft broke the capability of starting WSL as a service or a scheduled task when is was moved to their store because it will no longer run in session 0.
+# These conclusions can be inferred from the discussions with Microsoft's Windows Subsystem for Linux teams found on here on github.
+# akes it less useful for sure. Only info from MS is they are working on it. Whether they are remains to be seen.
+https://superuser.com/questions/1754734/how-to-run-wsl-on-windows-11-boot-as-service
+
+https://github.com/microsoft/WSL/issues/9231#issuecomment-1383674435
+
+Host openssh_win32
+    Hostname your_computer.local
+    User windows_username
+
+Host openssh_wsl
+   ProxyJump openssh_win32
+   User wsl_username
+   HostName localhost
+   Port 2222
+
+ssh openssh_wsl
+
+# WSL commands
+https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/
+wsl --version
+wsl --update
+systemctl list-unit-files --type=service
+
 https://patrick.wagstrom.net/weblog/2021/11/26/a-better-ssh-for-wsl2/
 https://dev.to/composite/a-tiny-but-perfect-guide-how-to-install-wsl-2-on-windows-server-2022-1a8f
 https://prolincur.com/blog/wslssh/
@@ -13,7 +38,6 @@ https://aspiringcraftsman.com/2022/07/01/ssh-on-wsl.html
 sudo apt install openssh-server
 
 sudo ssh-keygen -A
-
 
 sudo systemctl enable ssh
 sudo systemctl status ssh
@@ -33,7 +57,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart ssh
 sudo systemctl status ssh
 
-sudo sed -i -E 's,^#?Port.*$,Port 22,' /etc/ssh/sshd_config
+sudo sed -i -E 's,^#?Port.*$,Port 2222,' /etc/ssh/sshd_config
 sudo service ssh restart
 sudo sh -c "echo '${USER} ALL=(root) NOPASSWD: /usr/sbin/service ssh start' >/etc/sudoers.d/service-ssh-start"
 netsh advfirewall firewall delete rule name="OpenSSH Server (sshd) for WSL"
