@@ -1,5 +1,34 @@
 # Configuring SSH access into WSL 1 and WSL 2
 https://jmmv.dev/2022/02/wsl-ssh-access.html
+https://www.youtube.com/watch?v=VjkE4dqdHX8&t=190
+https://www.hanselman.com/blog/how-to-ssh-into-wsl2-on-windows-10-from-an-external-machine
+https://gist.github.com/daehahn/497fa04c0156b1a762c70ff3f9f7edae?WT.mc_id=-blog-scottha
+https://aspiringcraftsman.com/2022/07/01/ssh-on-wsl.html
+
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo systemctl status ssh
+sudo nano /etc/wsl.conf
+[boot]
+systemd=true
+wsl --shutdown
+
+sudo mkdir -p /etc/systemd/system/ssh.socket.d
+sudo nano /etc/systemd/system/ssh.socket.d/listen.conf
+
+[Socket]
+ListenStream=
+ListenStream=22
+
+sudo systemctl daemon-reload
+sudo systemctl restart ssh
+sudo systemctl status ssh
+
+sudo sed -i -E 's,^#?Port.*$,Port 22,' /etc/ssh/sshd_config
+sudo service ssh restart
+sudo sh -c "echo '${USER} ALL=(root) NOPASSWD: /usr/sbin/service ssh start' >/etc/sudoers.d/service-ssh-start"
+netsh advfirewall firewall delete rule name="OpenSSH Server (sshd) for WSL"
+New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server (sshd) for WSL' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
 
 # WSL Install
 https://pureinfotech.com/install-wsl-windows-11/#:~:text=To%20install%20WSL%20on%20Windows,d%20DISTRO%2DNAME%E2%80%9D%20command.

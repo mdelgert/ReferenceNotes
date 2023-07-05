@@ -1,3 +1,6 @@
+# Util
+sudo apt install net-tools neofetch
+
 # How to Fix "WARNING: UNPROTECTED PRIVATE KEY FILE!" on Mac and Linux
 https://stackabuse.com/how-to-fix-warning-unprotected-private-key-file-on-mac-and-linux/
 
