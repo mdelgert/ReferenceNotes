@@ -1,12 +1,6 @@
 https://patrick.wagstrom.net/weblog/2021/11/26/a-better-ssh-for-wsl2/
-
-
-
-
 https://dev.to/composite/a-tiny-but-perfect-guide-how-to-install-wsl-2-on-windows-server-2022-1a8f
 https://prolincur.com/blog/wslssh/
-
-
 
 # Configuring SSH access into WSL 1 and WSL 2
 https://linux.how2shout.com/how-to-start-wsl-services-automatically-on-ubuntu-with-windows-10-startup/
