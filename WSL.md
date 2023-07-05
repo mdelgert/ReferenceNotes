@@ -5,6 +5,9 @@ https://superuser.com/questions/1754734/how-to-run-wsl-on-windows-11-boot-as-ser
 
 https://github.com/microsoft/WSL/issues/9231#issuecomment-1383674435
 
+netsh advfirewall firewall delete rule name="OpenSSH Server"
+New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+
 Host openssh_win32
     Hostname your_computer.local
     User windows_username
