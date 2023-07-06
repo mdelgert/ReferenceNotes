@@ -20,13 +20,12 @@ wsl --install -d Ubuntu
 # Update
 sudo apt update
 sudo apt upgrade
-sudo apt dist-upgrade
 
 # Shut down
 wsl --shutdown
 
-# Install ssh server
-sudo apt install openssh-server
+# Install ssh server and neo fetch
+sudo apt install openssh-server neofetch
 
 # See status
 sudo systemctl status ssh
@@ -55,3 +54,7 @@ Host openssh_wsl
    Port 2022
    IdentityFile ~/.ssh/Key
    IdentitiesOnly yes
+
+# Passwordless sudo access in WSL Ubuntu:
+sudo visudo
+username ALL=(ALL) NOPASSWD: ALL   
