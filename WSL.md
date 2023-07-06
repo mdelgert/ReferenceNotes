@@ -1,3 +1,11 @@
+https://linux.how2shout.com/how-to-start-wsl-services-automatically-on-ubuntu-with-windows-10-startup/
+
+create wsl_ssh.bat
+wsl sudo service ssh start
+run shell:startup copy file
+sudo nano 99-snapd.conf
+%sudo ALL=(ALL) NOPASSWD: /usr/sbin/service ssh *
+
 # It appears that Microsoft broke the capability of starting WSL as a service or a scheduled task when is was moved to their store because it will no longer run in session 0.
 # These conclusions can be inferred from the discussions with Microsoft's Windows Subsystem for Linux teams found on here on github.
 # akes it less useful for sure. Only info from MS is they are working on it. Whether they are remains to be seen.
