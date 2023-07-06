@@ -42,3 +42,16 @@ sudo systemctl status ssh
 cd ~
 mkdir .ssh
 touch authorized_keys
+
+# Create jump connection - https://github.com/microsoft/WSL/issues/9231#issuecomment-1383674435
+# New WSL seems locked down does not appear allowed to autostart from task. Must login and run WSL for SSH jump to work.
+Host openssh_win32
+    IdentityFile ~/.ssh/Key
+	IdentitiesOnly yes
+
+Host openssh_wsl
+   ProxyJump openssh_win32
+   HostName localhost
+   Port 2022
+   IdentityFile ~/.ssh/Key
+   IdentitiesOnly yes
