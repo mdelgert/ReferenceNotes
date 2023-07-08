@@ -125,6 +125,12 @@ shopt -u histreedit
 # WSL restore
 wsl --import Test C:\Data\Test C:\Backups\20233006_V1_Ubuntu22.04.tar
 
+# WSL specify user
+https://superuser.com/questions/1566022/how-to-set-default-user-for-manually-installed-wsl-distro
+sudo nano /etc/wsl.conf
+[user]
+default=username
+
 # Here's how you can configure passwordless sudo access in WSL Ubuntu:
 sudo visudo
 username ALL=(ALL) NOPASSWD: ALL
