@@ -1,3 +1,9 @@
+# Install Raspberry Pi OS's desktop environment over a Lite install
+https://www.jeffgeerling.com/blog/2022/install-raspberry-pi-oss-desktop-environment-over-lite-install
+
+sudo apt install xserver-xorg raspberrypi-ui-mods
+sudo raspi-config
+
 # Make a Keyboard Raspberry Pi Zero W
 https://davesteele.github.io/raspberrypi/2021/04/18/keyboard-jiggler/
 https://github.com/raspberrypisig/pizero-usb-hid-keyboard
