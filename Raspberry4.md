@@ -6,6 +6,7 @@ sudo raspi-config
 
 # Links
 https://blog.alexellis.io/hardened-raspberry-pi-nas/
+https://pimylifeup.com/raspberry-pi-nfs/
 https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/
 https://blog.alexellis.io/hardened-raspberry-pi-nas/
 
