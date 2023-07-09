@@ -4,6 +4,11 @@ https://www.jeffgeerling.com/blog/2022/install-raspberry-pi-oss-desktop-environm
 sudo apt install xserver-xorg raspberrypi-ui-mods
 sudo raspi-config
 
+# Links
+https://blog.alexellis.io/hardened-raspberry-pi-nas/
+https://raspberrytips.com/raspberry-pi-os-64-bits-vs-32-bits/
+https://blog.alexellis.io/hardened-raspberry-pi-nas/
+
 # Make a Keyboard Raspberry Pi Zero W
 https://davesteele.github.io/raspberrypi/2021/04/18/keyboard-jiggler/
 https://github.com/raspberrypisig/pizero-usb-hid-keyboard
