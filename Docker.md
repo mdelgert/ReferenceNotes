@@ -3,6 +3,8 @@ https://hub.docker.com/r/trnape/rpi-samba
 https://bitbucket.org/trnape/rpi-samba/src/master/
 https://gist.github.com/atanasyanew/5e1e5ba1af658aab5cd4f965919559ac
 https://github.com/alexandreroman/rpi-samba
+https://linuxfun.org/en/2022/01/21/how-to-setup-samba-server-on-raspberry-pi-en/
+https://github.com/fschuindt/docker-smb
 
 # OpenMediaVault Docker Container
 https://hub.docker.com/r/ikogan/openmediavault/tags
