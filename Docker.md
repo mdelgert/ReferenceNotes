@@ -1,3 +1,13 @@
+# OpenMediaVault Docker Container
+https://hub.docker.com/r/ikogan/openmediavault/tags
+https://www.truenas.com/freenas/
+https://hub.docker.com/r/ablyler/freenas-provisioner
+https://hub.docker.com/r/travisghansen/freenas-iscsi-provisioner
+https://hub.docker.com/r/phh700/openmediavault-armv8
+https://hub.docker.com/r/cedricdelpas/openmediavault
+
+docker run --name OpenMediaVault -d -ti -h openmediavault -v /home/mdelgert/data:/data:Z -P cedricdelpas/openmediavault
+
 # How to setup an ssh server within a docker container
 https://dev.to/s1ntaxe770r/how-to-setup-ssh-within-a-docker-container-i5i
 https://www.techrepublic.com/article/deploy-docker-container-ssh-access/
