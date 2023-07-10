@@ -1,3 +1,9 @@
+# Samba file server for Raspberry Pi
+https://hub.docker.com/r/trnape/rpi-samba
+https://bitbucket.org/trnape/rpi-samba/src/master/
+https://gist.github.com/atanasyanew/5e1e5ba1af658aab5cd4f965919559ac
+https://github.com/alexandreroman/rpi-samba
+
 # OpenMediaVault Docker Container
 https://hub.docker.com/r/ikogan/openmediavault/tags
 https://www.truenas.com/freenas/
