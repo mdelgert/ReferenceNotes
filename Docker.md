@@ -1,9 +1,43 @@
+# How to setup an ssh server within a docker container
+https://dev.to/s1ntaxe770r/how-to-setup-ssh-within-a-docker-container-i5i
+https://www.techrepublic.com/article/deploy-docker-container-ssh-access/
+https://mtabishk999.medium.com/how-to-enable-ssh-within-a-docker-container-511260a70cce
+
+# Dockerfile
+# Use a base image
+FROM ubuntu:latest
+
+# Install SSH server
+RUN apt-get update && apt-get install -y openssh-server
+
+# Configure SSH server
+RUN mkdir /var/run/sshd
+RUN echo 'root:password' | chpasswd
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN echo 'PermitUserEnvironment yes' >> /etc/ssh/sshd_config
+
+# Expose SSH port
+EXPOSE 22
+
+# Start SSH server
+CMD ["/usr/sbin/sshd", "-D"]
+
+docker build -t ubuntu1 .
+docker run -d --restart=unless-stopped -p 2022:22 --name dev1 ubuntu1
+
+--restart=always
+
+ssh root@localhost -p 2022
+
 # Containerize an application
 https://docs.docker.com/get-started/02_our_app/
 
 git clone https://github.com/docker/getting-started.git
 docker build -t getting-started .
 docker run -d -p 80:80 getting-started
+
+Or pull from docker hub
+docker run -d -p 80:80 docker/getting-started --restart=always
 
 # Or simple test from docker
 docker run -d -p 80:80 docker/getting-started
