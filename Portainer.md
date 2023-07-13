@@ -1,3 +1,9 @@
+https://earthly.dev/blog/explore-portainer-as-tool/
+https://www.virtualizationhowto.com/2022/12/portainer-agent-manage-remote-docker-environment/
+
+# Adding docker hosts
+docker run -d -p 9001:9001 --name portainer_agent --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/volumes:/var/lib/docker/volumes portainer/agent:latest
+
 https://docs.portainer.io/start/install-ce/server/docker/linux
 
 docker volume create portainer_data
