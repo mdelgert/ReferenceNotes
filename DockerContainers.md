@@ -13,7 +13,11 @@ https://hub.docker.com/r/linuxserver/heimdall/
 
 # Network monitoring
 https://github.com/louislam/uptime-kuma
+https://github.com/louislam/uptime-kuma/wiki/How-to-Monitor-Docker-Containers
+
 docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+
+docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data -v /var/run/docker.sock:/var/run/docker.sock --name uptime-kuma louislam/uptime-kuma:1
 
 # Bitwarden
 https://www.makeuseof.com/self-host-bitwarden-password-manager-raspberry-pi-zero/
