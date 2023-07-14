@@ -37,6 +37,13 @@ https://github.com/alexta69/metube
 https://github.com/CorentinTh/it-tools
 docker run -d --name it-tools --restart unless-stopped -p 8080:80 corentinth/it-tools:latest
 
+# Backups
+https://www.duplicati.com/
+https://www.urbackup.org/index.html
+https://hub.docker.com/r/linuxserver/duplicati
+
+
+
 # Webtop
 https://docs.linuxserver.io/images/docker-webtop
 https://github.com/linuxserver/docker-webtop
