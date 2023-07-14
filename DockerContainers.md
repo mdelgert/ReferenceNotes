@@ -6,6 +6,10 @@ https://github.com/dani-garcia/vaultwarden
 https://guacamole.apache.org/
 https://hub.docker.com/r/linuxserver/openvscode-server
 
+# Application Dashboard
+https://heimdall.site/
+https://hub.docker.com/r/linuxserver/heimdall/
+
 # Network monitoring
 https://github.com/louislam/uptime-kuma
 docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
