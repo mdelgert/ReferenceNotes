@@ -1,3 +1,17 @@
+# Running SQL Server on Raspberry Pi using Docker | A 101 Guide
+https://hevodata.com/learn/sql-server-on-raspberry-pi/
+
+sudo docker pull mcr.microsoft.com/azure-sql-edge:latest
+
+(for developer edition)
+sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 --name azuresqledge -d mcr.microsoft.com/azure-sql-edge
+
+(for premium edition)
+sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=yourStrong(!)Password' -e 'MSSQL_PID=Premium' -p 1433:1433 --name azuresqledge -d mcr.microsoft.com/azure-sql-edge
+
+# How to install Kubernetes on Raspberry PI
+https://medium.com/karlmax-berlin/how-to-install-kubernetes-on-raspberry-pi-53b4ce300b58
+
 # Install Raspberry Pi OS's desktop environment over a Lite install
 https://www.jeffgeerling.com/blog/2022/install-raspberry-pi-oss-desktop-environment-over-lite-install
 
