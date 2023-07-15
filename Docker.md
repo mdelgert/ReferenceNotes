@@ -1,3 +1,16 @@
+# How to Monitor Container Memory and CPU Usage in Docker Desktop
+docker stats
+
+# Raspberry Pi & Docker Monitoring
+https://github.com/oijkn/Docker-Raspberry-PI-Monitoring
+
+# Top Docker Monitoring Tools
+https://code-maze.com/top-docker-monitoring-tools/
+https://hub.docker.com/r/google/cadvisor/
+
+# Monitor your Raspberry Pi cluster with Prometheus
+https://blog.alexellis.io/prometheus-nodeexporter-rpi/
+
 # Samba file server for Raspberry Pi
 https://hub.docker.com/r/trnape/rpi-samba
 https://bitbucket.org/trnape/rpi-samba/src/master/
