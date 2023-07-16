@@ -1,10 +1,15 @@
+# See temp
+vcgencmd measure_temp
+
+sudo apt install htop libsensors5
+
+htop
 # How To Install Docker and Docker-Compose On Raspberry Pi
 https://dev.to/elalemanyo/how-to-install-docker-and-docker-compose-on-raspberry-pi-1mo
 https://jfrog.com/connect/post/install-docker-compose-on-raspberry-pi/
 https://linuxhint.com/install-docker-compose-raspberry-pi/
 
 sudo apt install docker-compose -y
-
 
 # Install Docker-Compose
 sudo apt-get install libffi-dev libssl-dev
