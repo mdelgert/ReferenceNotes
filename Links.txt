@@ -7,3 +7,4 @@ https://pwnagotchi.ai/
 
 # Review later
 https://medium.com/geekculture/run-a-gui-software-inside-a-docker-container-dce61771f9
+https://claudiu.psychlab.eu/post/homelab-4-install-and-configure-nginx-proxy-manager-with-ssl-wildcard-certs/
