@@ -7,6 +7,11 @@ https://github.com/dani-garcia/vaultwarden
 https://guacamole.apache.org/
 https://hub.docker.com/r/linuxserver/openvscode-server
 
+# Pi-Hosted Portainer Template V2
+https://github.com/novaspirit/pi-hosted
+
+wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/install_docker.sh | bash
+
 # Application Dashboard
 https://heimdall.site/
 https://hub.docker.com/r/linuxserver/heimdall/
