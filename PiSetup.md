@@ -3,6 +3,12 @@
 sudo apt update
 sudo apt upgrade
 ```
+
+#### Install utils
+```bash
+sudo apt install neofetch htop libsensors5
+```
+
 #### Disable IPv6
 ```bash
 sudo nano /etc/sysctl.conf
@@ -14,6 +20,16 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 sudo sysctl -p
 ip a | grep inet6
 ```
+
+#### Disable wifi
+```bash
+sudo nano /etc/dhcpcd.conf
+-------------------------------------------
+denyinterfaces wlan0
+denyinterfaces wlan1
+-------------------------------------------
+```
+
 #### Static IP address
 ```bash
 sudo nano /etc/dhcpcd.conf
