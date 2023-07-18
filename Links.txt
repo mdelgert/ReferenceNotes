@@ -1,3 +1,7 @@
+# Rpi devices
+https://pibox.io/
+https://pikvm.org/
+
 # Rpi projects
 https://www.youtube.com/watch?v=km81ph7pZz8&t=629
 https://learn.networkchuck.com/pages/networkchuckacademy
