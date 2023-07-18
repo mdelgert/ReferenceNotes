@@ -9,6 +9,22 @@ sudo apt upgrade
 sudo apt install neofetch htop libsensors5
 ```
 
+#### Disable Wifi and Bluetooth
+[link](https://sleeplessbeastie.eu/2022/06/01/how-to-disable-onboard-wifi-and-bluetooth-on-raspberry-pi-4/)
+```bash
+echo "dtoverlay=disable-bt" | sudo tee -a /boot/config.txt
+echo "dtoverlay=disable-wifi" | sudo tee -a /boot/config.txt
+sudo systemctl disable hciuart
+sudo reboot
+```
+
+### Verify
+```bash
+hcitool dev
+iw dev
+ip -br a
+```
+
 #### Disable IPv6
 ```bash
 sudo nano /etc/sysctl.conf
@@ -19,15 +35,6 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 -------------------------------------------
 sudo sysctl -p
 ip a | grep inet6
-```
-
-#### Disable wifi
-```bash
-sudo nano /etc/dhcpcd.conf
--------------------------------------------
-denyinterfaces wlan0
-denyinterfaces wlan1
--------------------------------------------
 ```
 
 #### Static IP address

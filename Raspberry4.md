@@ -1,6 +1,12 @@
+# Internet Pi
+https://github.com/geerlingguy/internet-pi
+https://www.jeffgeerling.com/blog
+
+# How to disable onboard WiFi and Bluetooth on Raspberry Pi 4
+https://sleeplessbeastie.eu/2022/06/01/how-to-disable-onboard-wifi-and-bluetooth-on-raspberry-pi-4/
+
 # See temp
 vcgencmd measure_temp
-
 sudo apt install htop libsensors5
 
 htop
