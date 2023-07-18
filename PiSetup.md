@@ -72,6 +72,11 @@ ACTION=="add|change", ATTRS{idVendor}=="174c", ATTRS{idProduct}=="55aa", SUBSYST
 sudo systemctl enable fstrim.timer
 ```
 
+#### Trim the drive
+```bash
+sudo fstrim -v /
+```
+
 #### DeskPi
 ```bash
 git clone https://github.com/DeskPi-Team/deskpi.git
