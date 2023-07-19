@@ -1,9 +1,10 @@
-# Internet Pi
-https://github.com/geerlingguy/internet-pi
-https://www.jeffgeerling.com/blog
+### Fix 100% CPU | VSCODE-Server | Simple Remote SSH Guide
+search.follow symlinks <--- disable
+https://www.youtube.com/watch?v=36Hm1DEl82M
 
-# How to disable onboard WiFi and Bluetooth on Raspberry Pi 4
-https://sleeplessbeastie.eu/2022/06/01/how-to-disable-onboard-wifi-and-bluetooth-on-raspberry-pi-4/
+#### Avahi browsing, publishing and discovery utilities
+https://superuser.com/questions/1609203/cannot-resolve-hostname-updating-hostname-for-machine-on-local-lan-when-attemp
+sudo apt-get install avahi-utils
 
 # See temp
 vcgencmd measure_temp
