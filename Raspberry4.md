@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 #### Avahi browsing, publishing and discovery utilities
 https://superuser.com/questions/1609203/cannot-resolve-hostname-updating-hostname-for-machine-on-local-lan-when-attemp
 sudo apt-get install avahi-utils
+=======
+# Internet Pi
+https://github.com/geerlingguy/internet-pi
+https://www.jeffgeerling.com/blog
+
+# How to disable onboard WiFi and Bluetooth on Raspberry Pi 4
+https://sleeplessbeastie.eu/2022/06/01/how-to-disable-onboard-wifi-and-bluetooth-on-raspberry-pi-4/
+>>>>>>> 5c9b043e538c3851fd277e2d9113aa0125e7c7c2
 
 # See temp
 vcgencmd measure_temp
-
 sudo apt install htop libsensors5
 
 htop
