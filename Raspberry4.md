@@ -1,3 +1,7 @@
+#### Avahi browsing, publishing and discovery utilities
+https://superuser.com/questions/1609203/cannot-resolve-hostname-updating-hostname-for-machine-on-local-lan-when-attemp
+sudo apt-get install avahi-utils
+
 # See temp
 vcgencmd measure_temp
 
