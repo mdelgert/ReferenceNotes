@@ -21,3 +21,4 @@ https://robertopozzi.medium.com/use-ansible-to-automate-installation-and-deploym
 https://github.com/glennklockwood/rpi-ansible
 https://github.com/jonashackt/raspberry-ansible
 https://opensource.com/article/20/9/raspberry-pi-ansible
+https://docs.ansible.com/ansible/latest/getting_started/get_started_inventory.html
