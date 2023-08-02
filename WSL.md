@@ -1,3 +1,9 @@
+### Connecting USB devices to WSL
+https://devblogs.microsoft.com/commandline/connecting-usb-devices-to-wsl/
+https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+https://github.com/dorssel/usbipd-win
+
+### WSL Links
 https://endjin.com/blog/2021/11/setting-up-multiple-wsl-distribution-instances
 https://linux.how2shout.com/how-to-start-wsl-services-automatically-on-ubuntu-with-windows-10-startup/
 
