@@ -1,3 +1,42 @@
+### Fix 100% CPU | VSCODE-Server | Simple Remote SSH Guide
+search.follow symlinks <--- disable
+https://www.youtube.com/watch?v=36Hm1DEl82M
+
+#### Avahi browsing, publishing and discovery utilities
+https://superuser.com/questions/1609203/cannot-resolve-hostname-updating-hostname-for-machine-on-local-lan-when-attemp
+sudo apt-get install avahi-utils
+
+# See temp
+vcgencmd measure_temp
+sudo apt install htop libsensors5
+
+htop
+# How To Install Docker and Docker-Compose On Raspberry Pi
+https://dev.to/elalemanyo/how-to-install-docker-and-docker-compose-on-raspberry-pi-1mo
+https://jfrog.com/connect/post/install-docker-compose-on-raspberry-pi/
+https://linuxhint.com/install-docker-compose-raspberry-pi/
+
+sudo apt install docker-compose -y
+
+# Install Docker-Compose
+sudo apt-get install libffi-dev libssl-dev
+sudo apt install python3-dev
+sudo apt-get install -y python3 python3-pip
+
+# Running SQL Server on Raspberry Pi using Docker | A 101 Guide
+https://hevodata.com/learn/sql-server-on-raspberry-pi/
+
+sudo docker pull mcr.microsoft.com/azure-sql-edge:latest
+
+(for developer edition)
+docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=password' -p 1433:1433 --name azuresqledge -d mcr.microsoft.com/azure-sql-edge
+
+(for premium edition)
+docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=password' -e 'MSSQL_PID=Premium' -p 1433:1433 --name azuresqledge -d mcr.microsoft.com/azure-sql-edge
+
+# How to install Kubernetes on Raspberry PI
+https://medium.com/karlmax-berlin/how-to-install-kubernetes-on-raspberry-pi-53b4ce300b58
+
 # Install Raspberry Pi OS's desktop environment over a Lite install
 https://www.jeffgeerling.com/blog/2022/install-raspberry-pi-oss-desktop-environment-over-lite-install
 

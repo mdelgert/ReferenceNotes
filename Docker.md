@@ -1,3 +1,16 @@
+# How to Monitor Container Memory and CPU Usage in Docker Desktop
+docker stats
+
+# Raspberry Pi & Docker Monitoring
+https://github.com/oijkn/Docker-Raspberry-PI-Monitoring
+
+# Top Docker Monitoring Tools
+https://code-maze.com/top-docker-monitoring-tools/
+https://hub.docker.com/r/google/cadvisor/
+
+# Monitor your Raspberry Pi cluster with Prometheus
+https://blog.alexellis.io/prometheus-nodeexporter-rpi/
+
 # Samba file server for Raspberry Pi
 https://hub.docker.com/r/trnape/rpi-samba
 https://bitbucket.org/trnape/rpi-samba/src/master/
@@ -5,6 +18,7 @@ https://gist.github.com/atanasyanew/5e1e5ba1af658aab5cd4f965919559ac
 https://github.com/alexandreroman/rpi-samba
 https://linuxfun.org/en/2022/01/21/how-to-setup-samba-server-on-raspberry-pi-en/
 https://github.com/fschuindt/docker-smb
+https://blog.pistack.co.za/samba-server-on-raspberry-pi-with-docker/
 
 # OpenMediaVault Docker Container
 https://hub.docker.com/r/ikogan/openmediavault/tags
@@ -46,9 +60,6 @@ sudo sh get-docker.sh
 
 # Add your user to the Docker group
 sudo usermod -aG docker $USER
-
-# Install Docker Compose v2
-sudo apt-get update && sudo apt-get install docker-compose-plugin
 
 # Sanity check that both tools were installed successfully
 docker --version

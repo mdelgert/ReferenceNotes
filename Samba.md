@@ -1,4 +1,8 @@
 # Filesharing with the Raspberry Pi
+https://hub.docker.com/r/pwntr/samba-alpine
+https://github.com/pwntr/samba-alpine-docker
+
+https://github.com/dperson/samba
 https://raspberrypi-guide.github.io/filesharing/filesharing-raspberry-pi#:~:text=The%20simplest%20way%20to%20share,%3A%20.
 https://behind-the-scenes.net/sharing-a-raspberry-pi-directory-on-a-local-area-network/
 https://github.com/seamusdemora/PiFormulae/blob/master/FileShare.md
