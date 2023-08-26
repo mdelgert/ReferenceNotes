@@ -1,3 +1,14 @@
+# Screen Sharing in unusable state after rebooting
+https://askubuntu.com/questions/1296932/screen-sharing-in-unusable-state-after-rebooting
+
+I've discovered a more secure solution to the problem. The common approach suggested online involves setting a blank password for the login keyring using the "Passwords and Keys" application. However, this method is highly insecure, as it stores all passwords on the device in plaintext.
+
+Instead, I adopted a different approach. I created a new keyring in the "Passwords and Keys" app with no password and designated it as the default keyring. Then, I removed the VNC password from the login keyring. After these steps, I rebooted the computer to ensure that the new keyring became the default.
+
+Following the reboot, I reentered the VNC password in the screen sharing settings. This action saved the VNC password in the new, insecure keyring. I then returned to the "Passwords and Keys" app to reset the login keyring as the default. After yet another reboot, the VNC password remained saved, and the default keyring reverted to the login keyring. This process guarantees that all future passwords saved on the device will be encrypted.
+
+In essence, I've minimized the insecurity by moving from storing all passwords in plaintext to saving only the VNC password in plaintext.
+
 # Reference
 https://www.simplehelp.net/2009/05/27/how-to-stop-ubuntu-from-asking-for-your-sudo-password/
 https://linuxconfig.org/configure-sudo-without-password-on-ubuntu-20-04-focal-fossa-linux
