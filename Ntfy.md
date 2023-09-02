@@ -58,4 +58,9 @@ attachment-cache-dir: "~/docker/ntfy-server/var/cache/ntfy/attachments"
 docker compose down
 docker compose up -d
 
+## Send messages
 curl -d "test" -L https://myserver.mydomain.com/test 
+curl -d "{name:'test'}" ntfy.sh/mytopic
+
+https://github.com/Supereg/homebridge-http-switch/issues/113
+https://github.com/Supereg/homebridge-http-switch/wiki/Community-supplied-examples
