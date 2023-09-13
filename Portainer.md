@@ -1,3 +1,5 @@
+# Exposed ports in the container view redirect me to 0.0.0.0. What can I do?
+https://portal.portainer.io/knowledge/exposed-ports-in-the-container-view-redirect-me-to-0.0.0.0-what-can-i-do
 https://earthly.dev/blog/explore-portainer-as-tool/
 https://www.virtualizationhowto.com/2022/12/portainer-agent-manage-remote-docker-environment/
 
