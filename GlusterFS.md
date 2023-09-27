@@ -55,18 +55,17 @@ sudo nano /etc/fstab
 localhost:/gfs /mnt/gfs glusterfs defaults,_netdev,backupvolfile-server=localhost 0 0
 ```
 
-
-########### NOT WORKING #########################################
-
 ### How to mount a local GlusterFS volume at boot (fstab/systemd fix) 
 https://hub.docker.com/r/trajano/glusterfs-volume-plugin/
 https://forums.docker.com/t/share-glusterfs-mount-in-one-container-to-other-container/48175/4
 https://bugs.launchpad.net/ubuntu/+source/glusterfs/+bug/876648
 https://stanislas.blog/2018/10/how-to-mount-local-glusterfs-volume-boot-fstab-systemd-fix/
+https://serverfault.com/questions/800494/glusterfs-mount-on-boot-on-clustered-servers-rhel-7
 
 ```bash
 sudo nano /etc/fstab
 localhost:/gfs /mnt/gfs glusterfs defaults,_netdev 0 0
+localhost:/gfs /mnt/gfs glusterfs defaults,_netdev,_netdev,noauto,x-systemd.automount 0 0
 ```
 
 ```bash
