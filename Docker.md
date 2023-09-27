@@ -1,3 +1,8 @@
+# Uninstall Docker on Linux
+sudo systemctl stop docker
+sudo apt remove docker-ce docker-ce-cli containerd.io
+sudo rm -rf /var/lib/docker
+
 # How to Monitor Container Memory and CPU Usage in Docker Desktop
 docker stats
 
