@@ -43,7 +43,7 @@ sudo mount -a
 
 # auto mount share
 sudo nano /etc/fstab
-//server/share /mnt/myshare cifs username=your_username,password=your_password 0 0
+\\server\share /mnt/myshare cifs username=your_username,password=your_password 0 0
 sudo mount -a
 
 # https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown
