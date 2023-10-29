@@ -11,7 +11,7 @@ sudo apt install glusterfs-server -y
 sudo systemctl start glusterd
 sudo systemctl enable glusterd
 sudo su
-gluster peer probe p2; gluster peer probe p3; gluster peer probe p4;
+sudo gluster peer probe p2; gluster peer probe p3; gluster peer probe p4;
 sudo gluster pool list
 sudo mkdir -p /gluster/volumes
 sudo gluster volume create staging-gfs replica 3 p2:/gluster/volumes p3:/gluster/volumes p4:/gluster/volumes force
@@ -87,8 +87,3 @@ sudo systemctl disable gfs.mount
 sudo systemctl daemon-reload
 sudo rm /etc/systemd/system/gfs.mount
 ```
-
-
-
-
-

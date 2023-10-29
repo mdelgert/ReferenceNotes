@@ -4,7 +4,7 @@ https://keepalived.readthedocs.io/en/latest/introduction.html
 https://nickhowell.uk/2016/07/23/raspberry-pi-nas-with-gluster/
 
 ```bash
-apt-get install keepalived
+sudo apt install keepalived -y
 sudo nano /etc/keepalived/keepalived.conf
 ```
 
@@ -39,3 +39,8 @@ vrrp_instance VI_1 {
                 192.168.1.80
         }
 }
+
+### Start
+```bash
+/etc/init.d/keepalived start
+```
