@@ -1,4 +1,5 @@
 ### Links
+
 https://www.youtube.com/watch?v=Has6lUPdzzY&list=PLC5hLl1wqo43IaUc0MDti5uoymdKWAwDk&index=2&t=600s
 https://www.gluster.org/install/
 https://bookstack.elzim.xyz/books/self-hosting/page/glusterfs-setup
