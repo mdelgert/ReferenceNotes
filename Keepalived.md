@@ -3,6 +3,7 @@ https://github.com/acassen/keepalived
 https://keepalived.readthedocs.io/en/latest/introduction.html
 https://nickhowell.uk/2016/07/23/raspberry-pi-nas-with-gluster/
 
+
 ```bash
 sudo apt install keepalived -y
 sudo nano /etc/keepalived/keepalived.conf
