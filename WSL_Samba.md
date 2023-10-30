@@ -15,9 +15,21 @@ cd /mnt/d1
 sudo umount /mnt/d1
 ```
 
-### Auto mount
+### Mount cifs Network Drive: write permissions and chown
+https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown
 ```bash
-sudo nano /etc/fstab
-//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials uid=1000 gid=1000 file_mode=0664 dir_mode=0775 _netdev 0 0
-sudo mount -a
+#sudo mount -t cifs -o username=${USER},password=${PASSWORD} //server-address/folder /mount/path/on/ubuntu
+#sudo mount -t cifs -o username=${USER},password=${PASSWORD} //b1/d1 /mnt/d1
+#sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
+#/192.168.0.5/storage /media/myname/TK-Public/ cifs guest,uid=myuser,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm 0 0
+```
+
+### Auto mount does not work
+```bash
+#sudo nano /etc/fstab
+#//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials uid=1000 gid=1000 file_mode=0664 dir_mode=0775 _netdev 0 0
+#//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775,_netdev 0 0
+#//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials rw uid=1000 gid=1000 file_mode=0664 dir_mode=0775 _netdev 0 0
+#//p1/gluster /mnt/gluster cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775 0 0
+#sudo mount -a
 ```
