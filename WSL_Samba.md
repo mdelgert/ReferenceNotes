@@ -1,15 +1,26 @@
-
+### Links
+https://forums.linuxmint.com/viewtopic.php?t=346575
 https://statath.github.io/blog/how-to-mount-smb-shares-in-wsl-for-debian-based/
 https://stackoverflow.com/questions/45244306/mounting-a-windows-share-in-windows-subsystem-for-linux
 https://dev.to/rpalo/mounting-network-drives-into-windows-subsystem-linux-3ef7
+https://forums.linuxmint.com/viewtopic.php?t=349078
 
 ```ps
 wsl --terminate Ubuntu1
 ```
 
-### Manual mount
+### Install CIFS
 ```bash
 sudo apt install cifs-utils
+```
+
+### Update fstab working!!!!
+```bash
+//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775,noauto,x-systemd.automount 0 0
+```
+
+### Manual mount
+```bash
 sudo mkdir /mnt/d1
 sudo mount -t drvfs '\\b1\d1\' /mnt/d1
 cd /mnt/d1
@@ -28,6 +39,7 @@ https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-pe
 ### Auto mount does not work
 ```bash
 #sudo nano /etc/fstab
+#//b1/d1 /mnt/d1 drvfs auto,rw,nosuid,exec,uid=1000,gid=1000 0 0 #works but is read only
 #//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials uid=1000 gid=1000 file_mode=0664 dir_mode=0775 _netdev 0 0
 #//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775,_netdev 0 0
 #//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials rw uid=1000 gid=1000 file_mode=0664 dir_mode=0775 _netdev 0 0
