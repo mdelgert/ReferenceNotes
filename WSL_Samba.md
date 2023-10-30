@@ -1,4 +1,6 @@
 ### Links
+https://askubuntu.com/questions/313093/how-do-i-mount-a-cifs-share-via-fstab-and-give-full-rw-to-guest
+https://askubuntu.com/questions/1415762/mount-windows-share-is-read-only-for-one-user-and-writeable-for-another
 https://forums.linuxmint.com/viewtopic.php?t=346575
 https://statath.github.io/blog/how-to-mount-smb-shares-in-wsl-for-debian-based/
 https://stackoverflow.com/questions/45244306/mounting-a-windows-share-in-windows-subsystem-for-linux
@@ -27,7 +29,7 @@ cd /mnt/d1
 sudo umount /mnt/d1
 ```
 
-### Mount cifs Network Drive: write permissions and chown
+### Mount cifs Network Drive: write permissions and chown not working!!!
 https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown
 ```bash
 #sudo mount -t cifs -o username=${USER},password=${PASSWORD} //server-address/folder /mount/path/on/ubuntu
@@ -36,7 +38,7 @@ https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-pe
 #/192.168.0.5/storage /media/myname/TK-Public/ cifs guest,uid=myuser,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm 0 0
 ```
 
-### Auto mount does not work
+### Auto mount does not work!!
 ```bash
 #sudo nano /etc/fstab
 #//b1/d1 /mnt/d1 drvfs auto,rw,nosuid,exec,uid=1000,gid=1000 0 0 #works but is read only
