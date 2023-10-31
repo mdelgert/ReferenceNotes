@@ -21,14 +21,6 @@ sudo apt install cifs-utils
 //b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775,noauto,x-systemd.automount 0 0
 ```
 
-### Manual mount
-```bash
-sudo mkdir /mnt/d1
-sudo mount -t drvfs '\\b1\d1\' /mnt/d1
-cd /mnt/d1
-sudo umount /mnt/d1
-```
-
 ### Mount cifs Network Drive: write permissions and chown not working!!!
 https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown
 ```bash
@@ -47,4 +39,12 @@ https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-pe
 #//b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials rw uid=1000 gid=1000 file_mode=0664 dir_mode=0775 _netdev 0 0
 #//p1/gluster /mnt/gluster cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775 0 0
 #sudo mount -a
+```
+
+### Manual mount
+```bash
+sudo mkdir /mnt/d1
+sudo mount -t drvfs '\\b1\d1\' /mnt/d1
+cd /mnt/d1
+sudo umount /mnt/d1
 ```
