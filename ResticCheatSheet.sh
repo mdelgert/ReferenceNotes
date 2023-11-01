@@ -31,3 +31,5 @@ restic snapshots
 #restic restore SNAPSHOT_ID_IN_HEX --target /mnt/gfs/restore/test2
 
 # Restore specific file
+#restic restore SNAPSHOT_ID_IN_HEX --include /mnt/gfs/test/test3.txt --target /mnt/gfs/restore/test2
+#restic restore SNAPSHOT_ID_IN_HEX --include /mnt/gfs/test/test3.txt --target /
