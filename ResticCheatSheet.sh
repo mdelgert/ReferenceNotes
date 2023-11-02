@@ -1,9 +1,13 @@
 #!/bin/bash
 
 # https://www.linuxpedia.pl/articles/restic-basics/
+# https://restic.readthedocs.io/en/latest/020_installation.html
 
 # Install restic
 #sudo apt install restic
+
+# Once downloaded, the official binaries can be updated in place using the restic self-update command (needs restic 0.9.3 or later):
+#sudo restic self-update
 
 # Set location and password
 export RESTIC_REPOSITORY="/mnt/gfs/restic"
@@ -36,3 +40,11 @@ restic snapshots
 
 # Delete snapshot
 #restic forget SNAPSHOT_ID_IN_HEX
+
+# Remove lock
+# https://github.com/restic/restic/issues/1450
+# If does not unlock verify latest version
+#restic unlock
+#restic rebuild-index
+#restic prune
+#restic check
