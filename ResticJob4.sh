@@ -26,7 +26,7 @@ export RESTIC_PASSWORD="password"
 EXCLUDE_DIR="/mnt/d1/docker"
 
 # Set the directories to back up
-BACKUP_DIR="/mnt/d1/portainer"
+BACKUP_DIR="/mnt/d1"
 
 # Run the backup
 echo "$timestamp: Running the backup..."
