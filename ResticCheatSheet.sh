@@ -3,7 +3,16 @@
 # https://www.linuxpedia.pl/articles/restic-basics/
 # https://restic.readthedocs.io/en/latest/020_installation.html
 
-# Install restic
+# Windows Install restic
+#scoop install restic
+#choco install restic
+
+# Set windows restic enviornment variables
+#setx RESTIC_REPOSITORY "S:\restic"
+#setx RESTIC_PASSWORD "password"
+
+
+# Linux Install restic
 #sudo apt install restic
 
 # Once downloaded, the official binaries can be updated in place using the restic self-update command (needs restic 0.9.3 or later):
