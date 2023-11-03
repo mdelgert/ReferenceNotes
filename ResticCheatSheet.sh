@@ -11,6 +11,11 @@
 #setx RESTIC_REPOSITORY "S:\restic"
 #setx RESTIC_PASSWORD "password"
 
+# See enviornment variables
+#Get-ChildItem Env:
+#echo $env:RESTIC_REPOSITORY
+#echo %RESTIC_PASSWORD%
+
 
 # Linux Install restic
 #sudo apt install restic
