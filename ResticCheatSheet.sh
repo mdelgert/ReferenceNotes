@@ -59,6 +59,6 @@ restic snapshots
 # https://github.com/restic/restic/issues/1450
 # If does not unlock verify latest version
 #restic unlock
-#restic rebuild-index
+#restic repair index
 #restic prune
 #restic check
