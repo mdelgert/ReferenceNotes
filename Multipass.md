@@ -4,6 +4,7 @@ https://github.com/canonical/multipass/
 https://medium.com/@paulrobu/how-to-run-ubuntu-22-04-vms-on-apple-m1-arm-based-systems-for-free-c8283fb38309
 https://formulae.brew.sh/cask/multipass#default
 https://multipass.run/docs/remove-an-instance
+https://medium.com/@suneel.omrey/move-show-applications-right-to-left-of-the-dock-in-ubuntu-18-04-9592dfd18c9a
 
 ### Remove
 ```bash
@@ -30,4 +31,9 @@ sudo apt install ubuntu-desktop xrdp -y
 sudo passwd ubuntu
 sudo adduser username
 sudo usermod -aG sudo username
+```
+
+### Packages
+```bash
+sudo apt install gnome-tweaks
 ```
