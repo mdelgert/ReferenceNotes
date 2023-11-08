@@ -70,3 +70,10 @@ git config user.email
 ```
 nano ~/.bashrc
 ```
+
+### Docker
+```bash
+sudo curl -fsSL https://get.docker.com | bash
+sudo usermod -aG docker $USER
+docker run hello-world
+```
