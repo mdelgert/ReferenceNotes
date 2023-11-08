@@ -6,7 +6,7 @@ wsl --import Ubuntu1 C:\Data\WSL\Ubuntu1 C:\Backups\Ubuntu1.tar
 
 ### Update WSL config
 ```bash
-nano /etc/wsl.conf
+sudo nano /etc/wsl.conf
 ```
 
 ### Example wsl config
@@ -50,6 +50,7 @@ password=pass
 //b1/d1 /mnt/d1 cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775,noauto,x-systemd.automount 0 0
 //p1/gluster /mnt/gfs cifs credentials=/home/mdelgert/.smbcredentials,uid=1000,gid=1000,file_mode=0664,dir_mode=0775,noauto,x-systemd.automount 0 0
 
+
 ### wsl --shutdown, test if mount work and create symbolic link
 ```bash
 cd /mnt/d1
@@ -70,6 +71,9 @@ git config user.email
 ```
 nano ~/.bashrc
 ```
+
+### example bashrc
+alias python='python3'
 
 ### Docker
 ```bash
