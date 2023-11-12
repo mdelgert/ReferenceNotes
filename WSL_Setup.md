@@ -2,6 +2,8 @@
 ```ps
 wsl --unregister Ubuntu1
 wsl --import Ubuntu1 C:\Data\WSL\Ubuntu1 C:\Backups\Ubuntu1.tar
+wsl --set-default Ubuntu1
+wsl --list
 ```
 
 ### Update WSL config
