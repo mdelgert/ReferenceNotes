@@ -1,3 +1,20 @@
+# Get linux samba shares to show up in windows again
+https://dev.to/matmooredev/get-linux-samba-shares-to-show-up-in-windows-again-3b03
+https://github.com/christgau/wsdd#debianubuntu
+https://devicetests.com/make-samba-share-visible-windows-network
+https://miteshparmar1.medium.com/make-the-raspberry-pi-visible-on-your-mac-and-windows-computers-31c12e4e19d2
+
+```bash
+sudo nano /etc/samba/smb.conf
+sudo service smbd restart
+```
+
+### Example
+[global]
+wins support = yes
+local master = yes
+preferred master = yes
+
 # Filesharing with the Raspberry Pi
 https://hub.docker.com/r/pwntr/samba-alpine
 https://github.com/pwntr/samba-alpine-docker
