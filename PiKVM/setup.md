@@ -1,3 +1,25 @@
+# Static IP
+https://www.reddit.com/r/pikvm/comments/kyzc2s/network_configuration/
+https://wiki.archlinux.org/title/Netctl#Wired_2
+
+```bash
+rw
+cp /etc/systemd/network/eth0.network /etc/netctl/eth0.network
+nano /etc/netctl/eth0.network
+ro
+```
+
+# Example
+[Match]
+Name=eth0
+
+[Network]
+Address=<yourip>/<your cidr mask IE 24>
+Gateway=<your gateway>
+DNS=<your dns>
+DNS=<your backup dns>
+DNS=<your backup dns>
+
 # Hostname on pikvm on same network issue
 https://www.reddit.com/r/pikvm/comments/qci0zi/hostname_on_pikvm_on_same_network_issue/
 hostnamectl set-hostname pikvm2
