@@ -3,11 +3,13 @@ https://airspy.com/download/
 https://github.com/rtlsdrblog/rtl-sdr-blog
 https://www.radioreference.com/db/browse/coid/1
 http://www.csgnetwork.com/antennaedcalc.html
+https://github.com/shajen/rtl-sdr-scanner-cpp
 
 # Videos
 https://www.youtube.com/watch?v=C01wLvwjLIs&list=PLC5hLl1wqo4272U2B2L52L6BcBIdBci8E&index=1&t=939s&pp=gAQBiAQB
 https://www.youtube.com/watch?v=h4x7cGALaC8&list=PLC5hLl1wqo4272U2B2L52L6BcBIdBci8E&index=2&t=335s
 https://www.youtube.com/watch?v=1Em3TvCb2BY&list=PLC5hLl1wqo4272U2B2L52L6BcBIdBci8E&index=3&t=1067s&pp=gAQBiAQB
+https://www.youtube.com/watch?v=YzQ2N0VkKvE&t=34s
 
 # Setup driver
 ```bash
