@@ -8,11 +8,20 @@ https://github.com/Microsoft/linux-vm-tools/wiki/Onboarding:-Ubuntu
 https://ubuntuforums.org/showthread.php?t=2481545
 https://www.nakivo.com/blog/install-ubuntu-20-04-on-hyper-v-with-enhanced-session/
 https://github.com/neutrinolabs/pulseaudio-module-xrdp/wiki/Build-on-Debian-or-Ubuntu
+https://superuser.com/questions/1720705/a-cross-platform-way-to-share-a-usb-device-over-a-network
+https://wiki.archlinux.org/title/USB/IP
+https://github.com/cezanne/usbip-win
+
+### Share a USB device over a network
+https://github.com/dorssel/usbipd-win
+
+### Share USB GUI
+https://gitlab.com/alelec/wsl-usb-gui
+https://marketplace.visualstudio.com/items?itemName=thecreativedodo.usbip-connect
 
 ### Install Ubuntu as Hyper-V Generation 2 Virtual Machine
 Go to settings, security enable secure boot with templage "Microsoft UEFI Certificate Authority"
 Then click apply connect and start
-https://blog.matrixpost.net/wp-content/uploads/2021/11/secure_boot_ubuntu.png
 
 ### Detailed Walkthrough: Install Ubuntu 20.04 on Hyper-V with Enhanced Session
 ```PS
@@ -50,6 +59,21 @@ sudo nano /etc/xrdp/xrdp.ini
 #port=vsock://-1:3390
 reboot
 ```
+
+https://www.altaro.com/hyper-v/install-hyper-v-powershell-module/
+
+# Install only the PowerShell module
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Management-PowerShell
+
+# Install the Hyper-V management tool pack (Hyper-V Manager and the Hyper-V PowerShell module)
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Tools-All
+
+# Install the entire Hyper-V stack (hypervisor, services, and tools)
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+
+# Enable disable from command
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
 
 ################################# If run github script no longer required #################################
 
