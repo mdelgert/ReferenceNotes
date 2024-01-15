@@ -1,4 +1,14 @@
+# Change email address in Git
+https://stackoverflow.com/questions/37805621/change-email-address-in-git
 
+```bash
+git config --global user.name "John Doe"  
+git config --global user.email johndoe@example.com  
+git config --list
+```
+
+# Generating a new SSH key and adding it to the ssh-agent
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 # How to switch to an existing branch in Git
 https://www.freecodecamp.org/news/git-switch-branch/
