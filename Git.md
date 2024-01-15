@@ -9,6 +9,12 @@ git config --list
 
 # Generating a new SSH key and adding it to the ssh-agent
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+https://www.atlassian.com/git/tutorials/git-ssh
+https://krshillman.medium.com/setting-up-gitbash-with-ssh-on-windows-52b0f28ad84e
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
 # How to switch to an existing branch in Git
 https://www.freecodecamp.org/news/git-switch-branch/
