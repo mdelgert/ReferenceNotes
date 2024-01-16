@@ -12,6 +12,24 @@ https://superuser.com/questions/1720705/a-cross-platform-way-to-share-a-usb-devi
 https://wiki.archlinux.org/title/USB/IP
 https://github.com/cezanne/usbip-win
 
+### Set up a NAT network
+https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/setup-nat-network#connect-a-virtual-machine
+https://activedirectorypro.com/how-to-create-a-nat-switch-on-hyper-v/
+
+```PS
+New-VMSwitch -SwitchName "nat-switch" -SwitchType Internal
+Get-NetAdapter
+New-NetIPAddress -IPAddress 192.168.50.1 -PrefixLength 24 -InterfaceIndex 53
+New-NetNat -Name Nat-Switch-Outside -InternalIPInterfaceAddressPrefix 192.168.50.0/24
+Get-NetNat "Nat-Switch-Outside"
+```
+
+### Delete NAT
+```PS
+
+```
+
+
 ### Share a USB device over a network
 https://github.com/dorssel/usbipd-win
 
