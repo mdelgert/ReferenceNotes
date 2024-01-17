@@ -26,7 +26,8 @@ Get-NetNat "Nat-Switch-Outside"
 
 ### Delete NAT
 ```PS
-
+Get-NetNat "Nat-Switch-Outside" | Remove-NetNat
+Remove-VMSwitch "nat-switch"
 ```
 
 
