@@ -1,6 +1,9 @@
 ### Veeam Agent for Microsoft Windows
 https://www.veeam.com/agent-for-windows-community-edition.html
 
+### Installing the Veeam Agent for Linux
+https://community.hetzner.com/tutorials/getting-started-with-veeam/installing-the-veeam-agent-for-linux
+
 ### Can't backup to network share without credentials on Windows
 https://forums.veeam.com/veeam-agent-for-windows-f33/unable-to-see-smb-share-with-veeam-for-windows-free-edition-t56695.html
 https://forums.veeam.com/veeam-agent-for-windows-f33/can-t-backup-to-network-share-without-credentials-on-windows-t29564.html
@@ -18,3 +21,4 @@ https://learn.microsoft.com/en-US/troubleshoot/windows-server/networking/guest-a
 
 ### Veeam Agent for Microsoft Windows 6
 https://helpcenter.veeam.com/docs/agentforwindows/userguide/backup_job_share.html?ver=60
+
