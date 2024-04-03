@@ -47,3 +47,26 @@ kvmd:
         jiggler:
             enabled: true
             active: true
+
+# Disabling Mass Storage
+https://docs.pikvm.org/msd/#manual-drives-management
+https://docs.pikvm.org/faq/#common-questions
+
+rw
+nano /etc/kvmd/override.yaml
+reboot
+
+kvmd:
+    msd:
+        type:  disabled
+
+otg:
+    manufacturer: Corsair
+    product: Corsair Gaming RGB
+    vendor_id: 0x6940
+    product_id: 0x6973
+    serial:
+
+# Editing EDID
+https://docs.pikvm.org/edid/#edid-examples-for-v4
+kvmd-edidconf --set-mfc-id=AUS --set-monitor-name=VG279QL1A-V
