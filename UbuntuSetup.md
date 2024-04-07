@@ -4,6 +4,13 @@ ps -e | grep snap-store #id blocking process
 kill #id
 sudo snap refresh
 
+# Make Ubuntu Not Go in Suspend When Laptop Lid is Closed
+https://itsfoss.com/laptop-lid-suspend-ubuntu/
+sudo nano /etc/systemd/logind.conf
+HandleLidSwitch=ignore
+HandleLidSwitchExternalPower=ignore
+HandleLidSwitchDocked=ignore
+
 # Screen Sharing in unusable state after rebooting
 https://askubuntu.com/questions/1296932/screen-sharing-in-unusable-state-after-rebooting
 

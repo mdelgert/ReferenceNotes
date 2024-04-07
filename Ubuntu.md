@@ -1,3 +1,44 @@
+# Xrdp
+https://www.anyviewer.com/how-to/rdp-multiple-monitors-not-working-2578.html
+sudo apt install xrdp
+sudo nano /etc/xrdp/xrdp.ini
+sudo systemctl restart xrdp
+Make sure to logout and disable auto login because same user can not be logged in both places or xrdp will just close
+
+# xRDP – The Infamous “Authentication Required to Create Managed Color Device” Explained
+https://c-nergy.be/blog/?p=12073
+https://askubuntu.com/questions/1318473/authentication-required-popup/1373856#1373856
+
+sudo nano /etc/polkit-1/localauthority/50-local.d/45-remote-desktop-sanity.pkla
+
+[Allow Network Manager for Myself]
+Identity=unix-user:mdelgert
+Action=org.freedesktop.NetworkManager.*
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+
+[Allow Login, Shutdown, Restart, Etc for Myself]
+Identity=unix-user:mdelgert
+Action=org.freedesktop.login1.*
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+
+[Allow Colord all Users]
+Identity=unix-user:*
+Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;org.freedesktop.color-manager.delete-device;org.freedesktop.color-manager.delete-profile;org.freedesktop.color-manager.modify-device;org.freedesktop.color-manager.modify-profile
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
+
+[Allow Package Management all Users]
+Identity=unix-user:*
+Action=org.freedesktop.packagekit.system-sources-refresh
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+
 # Util
 sudo apt install net-tools neofetch
 
