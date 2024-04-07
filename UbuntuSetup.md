@@ -1,3 +1,9 @@
+# Fix snap update
+https://askubuntu.com/questions/1411834/cant-refresh-snap-store
+ps -e | grep snap-store #id blocking process
+kill #id
+sudo snap refresh
+
 # Screen Sharing in unusable state after rebooting
 https://askubuntu.com/questions/1296932/screen-sharing-in-unusable-state-after-rebooting
 
