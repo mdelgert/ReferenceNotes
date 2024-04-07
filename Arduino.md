@@ -1,6 +1,9 @@
 # Setup
+https://support.arduino.cc/hc/en-us/articles/360016495679-Fix-port-access-on-Linux
 sudo apt install libfuse2 python3-pip
 pip install pyserial
+sudo usermod -a -G dialout <username>
+(Restart your computer for the changes to take effect.)
 
 # Shortcut
 sudo wget https://raw.githubusercontent.com/mdelgert/ReferenceNotes/main/arduino2.png /usr/share/icons/arduino2.png
