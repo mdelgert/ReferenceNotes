@@ -28,7 +28,7 @@ arduino-cli upload --port /dev/ttyUSB0 --fqbn m5stack:esp32:m5stack_atom MyFirst
 arduino-cli lib search m5stack # Search for a library 
 arduino-cli lib install "M5Stack" # Install a library
 arduino-cli lib list # Confirm it is installed with
-```
+``
 # Setup
 https://support.arduino.cc/hc/en-us/articles/360016495679-Fix-port-access-on-Linux
 sudo apt install libfuse2 python3-pip
