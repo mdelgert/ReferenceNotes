@@ -1,3 +1,12 @@
+# Cannot run WSL2 over SSH on Windows 11
+https://superuser.com/questions/1714736/cannot-run-wsl2-over-ssh-on-windows-11
+https://superuser.com/questions/1714397/wsl-2-0-the-file-cannot-be-accessed-by-the-system/1758189#1758189
+https://github.com/microsoft/WSL/issues/9197
+https://carteakey.dev/remoting-into-wsl2-externally-the-easy-way/
+
+PS > & 'C:\Program Files\WSL\wsl.exe'
+CMD > "c:\Program Files\WSL\wsl.exe"
+
 # Install Windows OpenSSH Server
 netsh advfirewall firewall delete rule name="OpenSSH Server"
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
