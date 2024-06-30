@@ -4,4 +4,4 @@
 vmIdleTimeout=-1
 networkingMode = bridged
 vmSwitch = "WSL Bridge"
-ipv6=true
+ipv6=false
