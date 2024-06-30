@@ -1,3 +1,6 @@
+# Speeding up
+https://medium.com/@leandrocrs/speeding-up-wsl-i-o-up-than-5x-fast-saving-a-lot-of-battery-life-cpu-usage-c3537dd03c74
+
 ### Register instance
 ```ps
 wsl --unregister Ubuntu1
