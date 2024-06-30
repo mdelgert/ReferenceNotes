@@ -29,7 +29,7 @@ debugConsole=false
 networkingMode=bridged
 vmSwitch=WSLBridged
 dhcp=false
-macAddress=63:2e:54:52:2b:5f
+macAddress=C2:69:F3:8E:EA:EC
 ipv6=false
 
 [experimental]
@@ -40,9 +40,22 @@ autoMemoryReclaim=gradual
 vmIdleTimeout=-1
 networkingMode=bridged
 vmSwitch=WSLB
-macAddress=1a:6d:8c:08:9c:b6
+macAddress=11:A1:82:6E:CF:8E
 ipv6=false
 kernelCommandLine=ipv6.disable=1
+
+# Example mac addresses (if lower case throws error)
+C2:69:F3:8E:EA:EC
+11:A1:82:6E:CF:8E
+D6:3D:DC:26:FE:59
+93:CE:14:74:8F:2D
+C3:4D:59:13:CC:79
+AE:B6:F6:4B:1E:AE
+D3:8C:2C:8C:2B:19
+B0:96:4C:0E:11:9A
+69:9E:8C:07:AD:03
+57:AD:37:1E:9D:2A
+
 
 # Example client .wslconfig /etc/wsl.conf
 [boot]
