@@ -5,17 +5,44 @@ https://learn.microsoft.com/en-us/answers/questions/73672/(ubuntu-on-the-wsl2)-f
 https://github.com/microsoft/WSL/issues/5352
 https://github.com/microsoft/WSL/issues/11494
 https://github.com/kenvix/WSLAttachSwitchEx
+https://stackoverflow.com/questions/64569262/is-it-possible-to-make-wsl-virtual-switch-external-in-windows-20h2-wsl2-0-an
+https://github.com/microsoft/WSL/issues/5835
+https://github.com/microsoft/WSL/issues/4150
 
-# Example main .wslconfig C:\home\Users\username\.wslconfig 
+# Example 1 main .wslconfig C:\home\Users\username\.wslconfig 
 [wsl2]
 vmIdleTimeout=-1
-#networkingMode = bridged
-networkingMode=mirrored
-#vmSwitch = "WSL Bridge"
-#ipv6=false
+networkingMode = bridged
+#networkingMode=mirrored
+vmSwitch = "WSL Bridge"
+ipv6=true
 
+# Example 2
+[wsl2]
+kernelCommandLine=ipv6.disable=1
+memory=16GB
+swap=0
+guiApplications=true
+debugConsole=false
+#vmIdleTimeout=-1
+networkingMode=bridged
+vmSwitch=WSLBridged
+dhcp=false
+macAddress=0E:00:00:00:00:00
+ipv6=false
 
-# 5e:bb:f6:9e:ee:fa
+[experimental]
+autoMemoryReclaim=gradual
+
+# Example 3
+[wsl2]
+vmIdleTimeout=-1
+networkingMode=bridged
+vmSwitch=WSLB
+#macAddress=5e:bb:f6:9e:ee:fa
+macAddress=0a:b1:a2:c3:d4:e5
+ipv6=false
+kernelCommandLine=ipv6.disable=1
 
 # Example client .wslconfig /etc/wsl.conf
 [boot]
