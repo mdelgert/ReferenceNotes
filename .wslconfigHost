@@ -1,0 +1,4 @@
+# Host
+# /etc/.wslconfig
+[boot]
+systemd=true
