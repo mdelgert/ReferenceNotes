@@ -1,4 +1,5 @@
 ### Links
+https://www.makeuseof.com/windows-11-enable-hyper-v/
 https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905
 https://www.youtube.com/watch?v=vdmgmL1LOZQ
 https://www.youtube.com/watch?v=WWzMrtj2Or8&t=216
