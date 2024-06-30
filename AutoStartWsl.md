@@ -8,6 +8,7 @@ https://github.com/kenvix/WSLAttachSwitchEx
 https://stackoverflow.com/questions/64569262/is-it-possible-to-make-wsl-virtual-switch-external-in-windows-20h2-wsl2-0-an
 https://github.com/microsoft/WSL/issues/5835
 https://github.com/microsoft/WSL/issues/4150
+https://www.browserling.com/tools/random-mac
 
 # Example 1 main .wslconfig C:\home\Users\username\.wslconfig 
 [wsl2]
@@ -28,7 +29,7 @@ debugConsole=false
 networkingMode=bridged
 vmSwitch=WSLBridged
 dhcp=false
-macAddress=0E:00:00:00:00:00
+macAddress=63:2e:54:52:2b:5f
 ipv6=false
 
 [experimental]
@@ -39,8 +40,7 @@ autoMemoryReclaim=gradual
 vmIdleTimeout=-1
 networkingMode=bridged
 vmSwitch=WSLB
-#macAddress=5e:bb:f6:9e:ee:fa
-macAddress=0a:b1:a2:c3:d4:e5
+macAddress=1a:6d:8c:08:9c:b6
 ipv6=false
 kernelCommandLine=ipv6.disable=1
 
