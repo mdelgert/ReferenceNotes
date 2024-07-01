@@ -8,3 +8,17 @@ systemctl restart systemd-logind
 
 # Example
 HandleLidSwitch=ignore
+
+# Virtualize Windows 11 with Proxmox
+https://www.youtube.com/watch?v=fupuTkkKPDU&t=333s
+
+# Install Guest Agent and Services
+https://github.com/Zer0CoolX/proxmox-windows-slipstream-virtio-drivers/tree/master
+https://pve.proxmox.com/wiki/Windows_10_guest_best_practices#Drivers_and_Services
+https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.248-1/virtio-win.iso
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win-guest-tools.exe
+
+# SPICE Enhancements 
+https://pve1.vessea.com/pve-docs/chapter-qm.html#qm_spice_enhancements
