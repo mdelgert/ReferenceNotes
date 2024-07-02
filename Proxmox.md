@@ -22,3 +22,6 @@ https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/v
 
 # SPICE Enhancements 
 https://pve1.vessea.com/pve-docs/chapter-qm.html#qm_spice_enhancements
+
+# SMB, CIFS share provided by Proxmox
+https://www.reddit.com/r/Proxmox/comments/mco03f/smb_cifs_share_provided_by_proxmox/
