@@ -1,3 +1,10 @@
+# Unattended Windows Installation
+https://github.com/memstechtips/UnattendedWinstall
+
+# Tiny windows
+https://memstechtips.blogspot.com/2024/05/debloat-windows-11-tiny11-builder-tutorial.html#google_vignette
+https://github.com/ntdevlabs/tiny11builder
+
 # Confirmed as of 05/16/2024 with VMWare Fusion 13.5.2 that you can install Windows with a local account simply by...
 https://www.reddit.com/r/vmware/comments/17gvlyn/installing_windows_11_vm_without_a_windows_account/
 
