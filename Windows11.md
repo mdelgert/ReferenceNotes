@@ -1,6 +1,11 @@
 # Unattended Windows Installation
 https://github.com/memstechtips/UnattendedWinstall
 
+# Install winget in Power Shell
+```PS
+Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
+
 # Tiny windows
 https://memstechtips.blogspot.com/2024/05/debloat-windows-11-tiny11-builder-tutorial.html#google_vignette
 https://github.com/ntdevlabs/tiny11builder
@@ -8,6 +13,7 @@ https://github.com/ntdevlabs/tiny11builder
 # Set Execution Policy to Unrestricted run PS as admin
 ```PS 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
+get-executionpolicy
 ```
 
 # Confirmed as of 05/16/2024 with VMWare Fusion 13.5.2 that you can install Windows with a local account simply by...
