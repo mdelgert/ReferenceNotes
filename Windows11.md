@@ -16,6 +16,15 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
 get-executionpolicy
 ```
 
+# How to Log In Automatically to Windows 11
+https://www.howtogeek.com/838506/how-to-sign-into-your-windows-11-pc-automatically/
+
+(Change from 2 to 0)
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device 
+
+(Uncheck users must enter a password)
+run netplwiz
+
 # Confirmed as of 05/16/2024 with VMWare Fusion 13.5.2 that you can install Windows with a local account simply by...
 https://www.reddit.com/r/vmware/comments/17gvlyn/installing_windows_11_vm_without_a_windows_account/
 
