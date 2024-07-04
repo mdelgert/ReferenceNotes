@@ -24,6 +24,9 @@ https://dannyda.com/2020/11/13/how-to-remove-you-do-not-have-a-valid-subscriptio
 sed -i.backup -z "s/res === null || res === undefined || \!res || res\n\t\t\t.data.status.toLowerCase() \!== 'active'/false/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart proxmox-backup-proxy
 ```
 
+# How to Configure the Firewall on Proxmox
+https://www.wundertech.net/how-to-configure-the-firewall-on-proxmox/
+
 # Windows VirtIO Drivers
 https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers
 https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
