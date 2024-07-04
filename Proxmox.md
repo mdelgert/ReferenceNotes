@@ -1,3 +1,15 @@
+# Proxmox VE Storage
+https://pve.proxmox.com/pve-docs/pve-admin-guide.html#_storage_types
+
+# Qemu-guest-agent
+https://pve.proxmox.com/wiki/Qemu-guest-agent
+
+```bash
+apt-get install qemu-guest-agent
+systemctl start qemu-guest-agent
+systemctl enable qemu-guest-agent
+```
+
 # Remove Proxmox Subscription Notice
 https://johnscs.com/remove-proxmox51-subscription-notice/
 
