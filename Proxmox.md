@@ -1,3 +1,14 @@
+# Remove Proxmox Subscription Notice
+https://johnscs.com/remove-proxmox51-subscription-notice/
+
+```bash
+sed -Ezi.bak "s/(function\(orig_cmd\) \{)/\1\n\torig_cmd\(\);\n\treturn;/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
+```
+
+# Windows VirtIO Drivers
+https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
+
 # GNU/Linux Machine to Proxmox LXC Container Converter
 https://github.com/my5t3ry/machine-to-proxmox-lxc-ct-converter
 
