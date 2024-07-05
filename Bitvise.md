@@ -15,10 +15,17 @@ pwsh.exe
 # How to reboot from WSL2
 ```bash
 pwsh.exe
-Restart-Computer -Force
+Restart-Computer -Force # Method 1
+shutdown /r /t 0 # Method 2
 ```
 
 # How to run vmd from remote WSL2
 ```bash
 cmd.exe
 ```
+
+# Example (mnt/c/Users/$USERNAME/.wslconfig)
+
+[wsl2]
+vmIdleTimeout=-1
+nestedVirtualization=false
