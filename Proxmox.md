@@ -1,5 +1,35 @@
+# Links
+https://www.howtogeek.com/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/
+
 # Don’t run Proxmox without these settings!
 https://www.youtube.com/watch?v=VAJWUZ3sTSI
+
+# proxmox-backup-arm64
+https://github.com/wofferl/proxmox-backup-arm64
+
+# Setup notifications with docker and Gotify
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+docker run -p 80:80 -e TZ="America/New_York" -v /var/gotify/data:/app/data gotify/server
+
+curl "server/message?token=secret" -F "title=Hello" -F "message=World" -F "priority=5"
+```
 
 # Proxmox VE Storage
 https://pve.proxmox.com/pve-docs/pve-admin-guide.html#_storage_types
