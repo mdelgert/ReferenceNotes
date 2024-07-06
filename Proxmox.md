@@ -1,3 +1,6 @@
+# Don’t run Proxmox without these settings!
+https://www.youtube.com/watch?v=VAJWUZ3sTSI
+
 # Proxmox VE Storage
 https://pve.proxmox.com/pve-docs/pve-admin-guide.html#_storage_types
 
