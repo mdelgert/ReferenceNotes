@@ -1,11 +1,17 @@
 # Links
 https://www.howtogeek.com/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/
+https://gist.github.com/andrewfraley/faa03abc70b7f2b1bd8ec95dc962ba5d
 
 # Don’t run Proxmox without these settings!
 https://www.youtube.com/watch?v=VAJWUZ3sTSI
 
-# proxmox-backup-arm64
-https://github.com/wofferl/proxmox-backup-arm64
+# Update templates
+https://pve.proxmox.com/wiki/Linux_Container
+
+```bash
+pveam update
+pveam available
+```
 
 # Setup notifications with docker and Gotify
 ```bash
@@ -48,13 +54,6 @@ https://johnscs.com/remove-proxmox51-subscription-notice/
 
 ```bash
 sed -Ezi.bak "s/(function\(orig_cmd\) \{)/\1\n\torig_cmd\(\);\n\treturn;/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
-```
-
-# Remove Proxmox backup Subscription Notice
-https://dannyda.com/2020/11/13/how-to-remove-you-do-not-have-a-valid-subscription-for-this-server-from-proxmox-backup-server-pbs-1-0-1/
-
-```bash
-sed -i.backup -z "s/res === null || res === undefined || \!res || res\n\t\t\t.data.status.toLowerCase() \!== 'active'/false/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart proxmox-backup-proxy
 ```
 
 # How to Configure the Firewall on Proxmox
