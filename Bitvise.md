@@ -7,6 +7,12 @@ wsl -d ubuntu --cd ~
 Permit exec requests (set this to no or VSCODE remote SSH will not work)
 Exec request prefix leave blank
 
+# Fix bitwise terminal background colors
+```bash
+nano ~/.bashrc
+reset # Reset terminal settings to default
+```
+
 # How to run power shell from remote WSL2
 ```bash
 pwsh.exe
