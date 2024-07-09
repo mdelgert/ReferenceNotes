@@ -18,8 +18,11 @@ mkfs.ext4 /dev/sdb #select defaults
 mkdir /mnt/usb1
 mount /dev/sdb /mnt/usb1 
 df -h #see the new mount
-echo '/dev/sdb /mnt/usb1 ext4 defaults 0 2' >> /etc/fstab
+blkid /dev/sdb
+nano /etc/fstab
 ```
+
+UUID=325ca13d-2678-44e7-97ef-c12f98428aa6 /mnt/usb1 auto nosuid,nodev,nofail 0 0
 
 Then in storage manager add directory /mnt/usb1
 
