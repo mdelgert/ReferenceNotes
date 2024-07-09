@@ -9,6 +9,49 @@ lvs #Identify the Thin Pool: Find the thin pool that you want to expand.
 lvextend -l +100%FREE pve/data
 ```
 
+# Add USB drive
+```bash
+lsblk
+fdisk -l
+fdisk /dev/sdb #command n (new) p (primary select defaults) w (write the changes)
+mkfs.ext4 /dev/sdb #select defaults
+mkdir /mnt/usb1
+mount /dev/sdb /mnt/usb1 
+df -h #see the new mount
+echo '/dev/sdb /mnt/usb1 ext4 defaults 0 2' >> /etc/fstab
+```
+
+Then in storage manager add directory /mnt/usb1
+
+# Network
+```bash
+cp /etc/network/interfaces /etc/network/interfaces.bk
+nano /etc/network/interfaces
+systemctl restart networking
+```
+
+# Example interfaces
+auto lo
+iface lo inet loopback
+
+auto eno1
+iface eno1 inet static
+    address 192.168.50.245
+    netmask 255.255.255.0
+    gateway 192.168.50.1
+
+auto enp3s0
+iface enp3s0 inet manual
+auto vmbr0
+iface vmbr0 inet static
+    bridge_ports enp3s0
+    bridge_stp off
+    bridge_fd 0
+
+iface wlp4s0 inet manual
+
+source /etc/network/interfaces.d/*
+
 # Storage config location
 ```bash
 nano /etc/pve/storage.cfg
