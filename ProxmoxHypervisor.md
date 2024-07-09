@@ -1,3 +1,19 @@
+# Exspand lvm
+```bash
+lsblk #Identify the New Drive: Check which new drive you have added to the system.
+fdisk /dev/nvme1n1 #Partition the New Drive (Optional, if needed): Create a new partition on the drive (n use defaults)
+pvcreate /dev/nvme1n1p1 #Create a Physical Volume: Initialize the new partition or disk for LVM.
+vgdisplay #Identify the Volume Group: List the volume groups to find the one you want to extend.
+vgextend pve /dev/nvme1n1p1 #Extend the Volume Group: Add the new physical volume to the volume group.
+lvs #Identify the Thin Pool: Find the thin pool that you want to expand.
+lvextend -l +100%FREE pve/data
+```
+
+# Storage config location
+```bash
+nano /etc/pve/storage.cfg
+```
+
 # Links
 https://www.howtogeek.com/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/
 https://gist.github.com/andrewfraley/faa03abc70b7f2b1bd8ec95dc962ba5d
