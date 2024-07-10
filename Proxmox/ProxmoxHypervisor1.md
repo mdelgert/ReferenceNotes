@@ -9,23 +9,6 @@ lvs #Identify the Thin Pool: Find the thin pool that you want to expand.
 lvextend -l +100%FREE pve/data
 ```
 
-# Add USB drive
-```bash
-lsblk
-fdisk -l
-fdisk /dev/sdb #command n (new) p (primary select defaults) w (write the changes)
-mkfs.ext4 /dev/sdb #select defaults
-mkdir /mnt/usb1
-mount /dev/sdb /mnt/usb1 
-df -h #see the new mount
-blkid /dev/sdb
-nano /etc/fstab
-```
-
-UUID=325ca13d-2678-44e7-97ef-c12f98428aa6 /mnt/usb1 auto nosuid,nodev,nofail 0 0
-
-Then in storage manager add directory /mnt/usb1
-
 # Network
 ```bash
 cp /etc/network/interfaces /etc/network/interfaces.bk
@@ -66,14 +49,6 @@ https://gist.github.com/andrewfraley/faa03abc70b7f2b1bd8ec95dc962ba5d
 
 # Don’t run Proxmox without these settings!
 https://www.youtube.com/watch?v=VAJWUZ3sTSI
-
-# Update templates
-https://pve.proxmox.com/wiki/Linux_Container
-
-```bash
-pveam update
-pveam available
-```
 
 # Setup notifications with docker and Gotify
 ```bash

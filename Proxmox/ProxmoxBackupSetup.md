@@ -1,4 +1,12 @@
 # Install Proxmox Backup Server on Proxmox VE
+https://pbs.proxmox.com/docs/installation.html#server-installation
+
+1. Edit sources update and install backup server
+```bash
+apt update
+apt upgrade
+apt install proxmox-backup-server
+```
 
 # Remove Proxmox backup Subscription Notice
 https://dannyda.com/2020/11/13/how-to-remove-you-do-not-have-a-valid-subscription-for-this-server-from-proxmox-backup-server-pbs-1-0-1/

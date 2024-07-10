@@ -1,6 +1,7 @@
 # Setup disk
 
 ```bash
+lsblk
 fdisk /dev/nvme1n1 #type n enter accept all default and w to write
 mkfs.ext4 /dev/nvme1n1 # For ext4 file system
 mkdir /mnt/d1
@@ -12,6 +13,26 @@ nano /etc/fstab
 
 # Example /etc/fstab
 UUID=3fd2ff28-fe8d-4fc6-ae9d-c631f275f190 /mnt/d1 ext4 defaults 0 0
+
+# Setup USB
+```bash
+lsblk
+fdisk /dev/sda #type n enter accept all default and w to write
+mkfs.ext4 /dev/sda # For ext4 file system
+mkdir /mnt/usb1
+mount /dev/sda /mnt/usb1
+df -h
+blkid /dev/sda
+nano /etc/fstab
+```
+
+# Example /etc/fstab with no fail
+UUID=325ca13d-2678-44e7-97ef-c12f98428aa6 /mnt/d2 auto nosuid,nodev,nofail 0 0
+
+# Reload /etc/fstab and Mount All Filesystems:
+```bash
+mount -a
+```
 
 # Steps to Share a Directory Using 9p
 https://chatgpt.com/share/645413b7-18a7-42e8-a7cf-4d2830628b78
