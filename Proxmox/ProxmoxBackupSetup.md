@@ -1,3 +1,12 @@
+# datastore recovery
+https://forum.proxmox.com/threads/datastore-recovery.72835/#post-325491
+
+```bash
+nano /etc/proxmox-backup/datastore.cfg
+```
+datastore: name
+        path /path/to/previous/ds
+
 # Install Proxmox Backup Server on Proxmox VE
 https://pbs.proxmox.com/docs/installation.html#server-installation
 
