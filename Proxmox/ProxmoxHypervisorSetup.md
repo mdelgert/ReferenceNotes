@@ -1,3 +1,6 @@
+# Mount points
+https://pve.proxmox.com/wiki/Linux_Container#_bind_mount_points
+
 # Remove Proxmox Subscription Notice
 https://johnscs.com/remove-proxmox51-subscription-notice/
 
