@@ -32,7 +32,8 @@ arduino-cli lib list # Confirm it is installed with
 # Setup
 https://support.arduino.cc/hc/en-us/articles/360016495679-Fix-port-access-on-Linux
 sudo apt install libfuse2 python3-pip
-pip install pyserial
+#pip install pyserial
+sudo apt install python3-serial
 sudo usermod -a -G dialout <username>
 (Restart your computer for the changes to take effect.)
 
@@ -45,7 +46,7 @@ sudo chmod +x ~/.local/share/applications/arduino.desktop
 [Desktop Entry]
 Name=Arduino
 Exec=/home/mdelgert/Downloads/arduino-ide_2.3.2_Linux_64bit.AppImage
-Icon=/usr/share/icons/arduinos.png
+Icon=/usr/share/icons/arduino2.png
 Type=Application
 Categories=Development;
 
