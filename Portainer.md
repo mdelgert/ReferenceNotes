@@ -1,3 +1,6 @@
+# Setup BE
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:latest
+
 # Exposed ports in the container view redirect me to 0.0.0.0. What can I do?
 https://portal.portainer.io/knowledge/exposed-ports-in-the-container-view-redirect-me-to-0.0.0.0-what-can-i-do
 https://earthly.dev/blog/explore-portainer-as-tool/
