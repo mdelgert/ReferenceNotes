@@ -1,3 +1,10 @@
+# Any way to disable this very annoying notification in Arduino IDE
+https://www.reddit.com/r/arduino/comments/z0whsa/any_way_to_disable_this_very_annoying/
+1. Ctrl Shift P
+2. Preferences: Open Settings (UI)
+3. Search (arduino.checkForUpdates)
+4. Uncheck Check For Updates
+
 # Arduino CLI
 https://arduino.github.io/arduino-cli/0.36/
 https://www.devdungeon.com/content/arduino-cli-tutorial
