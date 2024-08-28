@@ -42,16 +42,19 @@ sudo usermod -a -G dialout <username>
 (Restart your computer for the changes to take effect.)
 
 # Shortcut
-sudo wget https://raw.githubusercontent.com/mdelgert/ReferenceNotes/main/arduino2.png /usr/share/icons/arduino2.png
+cd /usr/share/icons/arduino2.png
+sudo wget https://raw.githubusercontent.com/mdelgert/ReferenceNotes/main/arduino2.png
 sudo nano ~/.local/share/applications/arduino.desktop
 sudo chmod +x ~/.local/share/applications/arduino.desktop
 
 # Example
 [Desktop Entry]
+Version=1.0
 Name=Arduino
-Exec=/home/mdelgert/Downloads/arduino-ide_2.3.2_Linux_64bit.AppImage
+Exec=/home/mdelgert/Downloads/arduino-ide_2.3.2_Linux_64bit.AppImage --no-sandbox
 Icon=/usr/share/icons/arduino2.png
 Type=Application
+Terminal=false
 Categories=Development;
 
 # Boards
