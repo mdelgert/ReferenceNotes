@@ -4,6 +4,10 @@ https://www.devdungeon.com/content/arduino-cli-tutorial
 
 # Install
 ```bash
+mkdir ~/.local/bin
+nano ~/.bashrc
+export PATH="$PATH:$HOME/.local/bin"
+source ~/.bashrc
 curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
 arduino-cli version
 ```
