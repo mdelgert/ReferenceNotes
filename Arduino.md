@@ -49,7 +49,7 @@ sudo usermod -a -G dialout <username>
 (Restart your computer for the changes to take effect.)
 
 # Shortcut
-cd /usr/share/icons/arduino2.png
+cd /usr/share/icons
 sudo wget https://raw.githubusercontent.com/mdelgert/ReferenceNotes/main/arduino2.png
 sudo nano ~/.local/share/applications/arduino.desktop
 sudo chmod +x ~/.local/share/applications/arduino.desktop
