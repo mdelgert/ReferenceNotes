@@ -1,4 +1,10 @@
 # Bluetooth Power Save Setting Causing Connectivity Issues
+
+Go to --> Bluetooth --> (Intel Wireless Bluetooth)
+Go to --> Human Interface Devices --> Bluetooth Low Energy GATT compliant HID device
+
+Uncheck (Allow the computer to turn off this device to save power)
+
 https://www.dell.com/support/kbdoc/en-us/000122996/bluetooth-mouse-losing-connection-or-connectivity-issue#Windows_11
 
 https://www.reddit.com/r/DellXPS/comments/s4wvgf/screen_does_not_turn_on_coming_out_of_sleep_xps/
