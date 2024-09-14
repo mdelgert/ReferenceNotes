@@ -1,5 +1,6 @@
 # Bluetooth Power Save Setting Causing Connectivity Issues
 
+Go to device manager
 Go to --> Bluetooth --> (Intel Wireless Bluetooth)
 Go to --> Human Interface Devices --> Bluetooth Low Energy GATT compliant HID device
 
