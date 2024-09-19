@@ -16,3 +16,19 @@ systemctl edit container-getty@.service
 [Service]
 ExecStart=
 ExecStart=-/sbin/agetty --autologin root --noclear --keep-baud tty%I 115200,38400,9600 $TERM
+
+# Show ip at terminal
+
+```bash
+nano /etc/rc.local
+chmod +x /etc/rc.local #See example
+```
+
+# Export lxc template
+
+```bash
+pct list
+vzdump 112 --dumpdir /var/lib/vz/template/cache --compress zstd
+cd /var/lib/vz/template/cache
+mv dumpfile.tar.zst example.tar.zst
+```
