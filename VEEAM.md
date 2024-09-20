@@ -13,6 +13,9 @@ apt-get install xorriso blksnap veeam
 sudo veeam
 ```
 
+### Veeam Agent for Mac
+https://www.veeam.com/products/physical/mac-backup-recovery-download.html
+
 ### Can't backup to network share without credentials on Windows
 https://forums.veeam.com/veeam-agent-for-windows-f33/unable-to-see-smb-share-with-veeam-for-windows-free-edition-t56695.html
 https://forums.veeam.com/veeam-agent-for-windows-f33/can-t-backup-to-network-share-without-credentials-on-windows-t29564.html
