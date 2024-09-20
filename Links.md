@@ -16,3 +16,4 @@ https://pwnagotchi.ai/
 https://medium.com/geekculture/run-a-gui-software-inside-a-docker-container-dce61771f9
 https://claudiu.psychlab.eu/post/homelab-4-install-and-configure-nginx-proxy-manager-with-ssl-wildcard-certs/
 https://docs.plesk.com/en-US/obsidian/administrator-guide/website-management/websites-and-domains/advanced-website-security/securing-connections-with-ssltls-certificates/getting-free-wildcard-ssltls-certificates-from-let%E2%80%99s-encrypt.79603/#:~:text=Go%20to%20Websites%20%26%20Domains%2C%20find,with%20a%20Let's%20Encrypt%20certificate).
+https://github.com/hwittenborn/celeste

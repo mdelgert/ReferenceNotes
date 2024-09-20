@@ -56,3 +56,12 @@ rclone config file
 ```
 
 C:\Users\YourUser\AppData\Roaming\rclone\rclone.conf
+
+# GUI Links
+https://github.com/hwittenborn/celeste (cloud sync)
+https://github.com/kapitainsky/RcloneBrowser?tab=readme-ov-file
+
+# Install GUI
+```ps
+winget install kapitainsky.RcloneBrowser
+```
