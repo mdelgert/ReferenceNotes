@@ -3,6 +3,15 @@ https://www.veeam.com/agent-for-windows-community-edition.html
 
 ### Installing the Veeam Agent for Linux
 https://community.hetzner.com/tutorials/getting-started-with-veeam/installing-the-veeam-agent-for-linux
+https://www.veeam.com/products/free/linux-download.html
+https://helpcenter.veeam.com/docs/agentforlinux/userguide/installation_val.html?ver=60#dep
+
+```bash
+sudo dpkg -i ./veeam-release*
+sudo apt-get update
+apt-get install xorriso blksnap veeam
+sudo veeam
+```
 
 ### Can't backup to network share without credentials on Windows
 https://forums.veeam.com/veeam-agent-for-windows-f33/unable-to-see-smb-share-with-veeam-for-windows-free-edition-t56695.html
