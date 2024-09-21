@@ -9,7 +9,7 @@ https://helpcenter.veeam.com/docs/agentforlinux/userguide/installation_val.html?
 ```bash
 sudo dpkg -i ./veeam-release*
 sudo apt-get update
-apt-get install xorriso blksnap veeam
+apt-get install xorriso cifs-utils blksnap veeam
 sudo veeam
 ```
 

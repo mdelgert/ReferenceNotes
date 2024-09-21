@@ -60,6 +60,7 @@ C:\Users\YourUser\AppData\Roaming\rclone\rclone.conf
 # GUI Links
 https://github.com/hwittenborn/celeste (cloud sync)
 https://github.com/kapitainsky/RcloneBrowser?tab=readme-ov-file
+https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide?tabs=azure-portal%2Cproactive-portal#install-the-azure-file-sync-agent
 
 # Install GUI
 ```ps
