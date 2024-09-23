@@ -1,3 +1,9 @@
+# SStorage exployer not opening browser to login
+https://github.com/microsoft/AzureStorageExplorer/releases
+
+Appears to be a bug with latests reverted back to 1.33.0
+https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.33.0/StorageExplorer-windows-x64.exe
+
 # How to mount Azure Blob Storage to your local Windows or virtual Linux machines (even with disabled NFS!)
 https://medium.com/data-science-at-microsoft/how-to-mount-azure-blob-storage-to-your-local-windows-or-virtual-linux-machines-even-with-disabled-3008aeec3da8
 https://rclone.org/azureblob/
