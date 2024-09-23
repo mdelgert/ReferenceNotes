@@ -1,0 +1,4 @@
+export RESTIC_REPOSITORY=azure:yourcontainer:/yourreponame
+export AZURE_ACCOUNT_NAME=yourstorageaccountname
+export AZURE_ACCOUNT_KEY=yourazureaccountkey
+export RESTIC_PASSWORD=yourresticpassword
