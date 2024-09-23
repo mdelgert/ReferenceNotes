@@ -86,3 +86,108 @@ azcopy --help
 
 AzCopy is a powerful tool for handling bulk data transfer needs, particularly when you work with Azure Blob or file storage.
 
+A **SAS token** (Shared Access Signature token) is a secure way to grant restricted access to your Azure Storage resources (such as blobs, containers, files, queues, or tables) without exposing your storage account keys. It allows you to specify permissions (read, write, delete, etc.), a time range, and other access restrictions.
+
+Here’s how you can generate a SAS token for an Azure Blob Storage resource via the Azure Portal, Azure CLI, or Azure PowerShell:
+
+### 1. **Using the Azure Portal**
+To generate a SAS token using the Azure portal:
+
+1. **Navigate to Storage Account**: 
+   - Go to the [Azure portal](https://portal.azure.com/).
+   - Select your **Storage Account** from the list.
+
+2. **Go to the "Shared access signature" section**:
+   - On the left-hand side, under the "Security + networking" section, select **Shared access signature**.
+
+3. **Set the SAS Parameters**:
+   - **Allowed Services**: Select the services you want the SAS token to apply to (e.g., Blob).
+   - **Allowed Resource Types**: Choose whether the SAS token applies to containers, objects, or both.
+   - **Permissions**: Choose the required permissions (e.g., read, write, list, delete).
+   - **Start and Expiry Times**: Set the time range for which the SAS token is valid.
+   - **IP Range**: Optionally, restrict access to specific IP addresses.
+   - **Protocol**: Choose whether the token applies to HTTPS only or both HTTP and HTTPS.
+
+4. **Generate the SAS Token and URL**:
+   - Click on **Generate SAS and connection string** at the bottom of the screen.
+   - The portal will generate a **SAS token** and a **Blob URL with SAS token**. Copy the token or URL to use in your application or command.
+
+### 2. **Using Azure CLI**
+To generate a SAS token using the Azure CLI, follow these steps:
+
+First, make sure you are logged into the Azure CLI:
+
+```bash
+az login
+```
+
+Next, generate a SAS token using the `az storage account generate-sas` command:
+
+```bash
+az storage account generate-sas \
+    --account-name <storage-account-name> \
+    --permissions rwl \
+    --expiry <expiry-date-time> \
+    --resource-types co \
+    --services b \
+    --https-only
+```
+
+- Replace `<storage-account-name>` with your actual storage account name.
+- Set `--permissions` for the required permissions (r = read, w = write, l = list, etc.).
+- Set `--expiry` with an appropriate expiry date (e.g., `2024-09-24T00:00:00Z` for an expiration date in UTC).
+- Set `--resource-types` to `co` for containers and objects.
+- Set `--services` to `b` for Blob.
+
+This will generate a SAS token, which you can append to your Blob URL.
+
+#### Example:
+```bash
+az storage account generate-sas \
+    --account-name mystorageaccount \
+    --permissions rwl \
+    --expiry 2024-09-24T00:00:00Z \
+    --resource-types co \
+    --services b \
+    --https-only
+```
+
+### 3. **Using Azure PowerShell**
+To generate a SAS token using Azure PowerShell, you can use the `New-AzStorageAccountSASToken` command:
+
+```powershell
+$storageAccount = Get-AzStorageAccount -ResourceGroupName <resource-group-name> -AccountName <storage-account-name>
+
+$sasToken = New-AzStorageAccountSASToken `
+    -Service Blob `
+    -ResourceType Container,Object `
+    -Permission rwl `
+    -ExpiryTime (Get-Date).AddHours(2) `
+    -Context $storageAccount.Context
+```
+
+This script generates a SAS token for the specified storage account, allowing read, write, and list permissions, valid for 2 hours.
+
+### 4. **Using AzCopy to Generate SAS Token**
+AzCopy also has a built-in command to generate a SAS token, but it requires the use of Azure Active Directory (AD) credentials. If you're authenticated using `azcopy login`, you can use:
+
+```bash
+azcopy make 'https://<storage-account-name>.blob.core.windows.net/<container-name>?<SAS-token>'
+```
+
+This command won't directly create a SAS token but helps with copying/moving data using your credentials without exposing account keys.
+
+---
+
+### Best Practices for SAS Tokens:
+- **Set appropriate permissions**: Grant only the permissions needed (e.g., if you're uploading files, only grant `write`).
+- **Limit the token’s validity period**: Set an appropriate expiry time for your use case to minimize the exposure of your storage account.
+- **Use HTTPS**: Always use HTTPS when generating a SAS token to ensure encrypted communication.
+
+Once you have your SAS token, you can append it to your blob/container URL like so:
+
+```bash
+https://<storage-account-name>.blob.core.windows.net/<container-name>/<blob-name>?<SAS-token>
+```
+
+You can now use this URL with AzCopy, REST APIs, or other tools.
