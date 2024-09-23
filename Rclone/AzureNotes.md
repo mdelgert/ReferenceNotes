@@ -3,6 +3,10 @@
 sudo apt install fuse3
 rclone config
 rclone ls rclonestorage2-enc:/
+
+mkdir -p /mnt/d1/rclonecache
+chmod 777 /mnt/d1/rclonecache
+
 sudo mkdir -p /mnt/rclonestorage2-enc
 sudo chown mdelgert /mnt/rclonestorage2-enc
 sudo chmod 777 /mnt/rclonestorage2-enc

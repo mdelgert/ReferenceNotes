@@ -4,14 +4,14 @@ After=network-online.target
 
 [Service]
 User=mdelgert
-ExecStart=/usr/bin/rclone mount rclonestorage2-enc:/ /mnt/rclonestorage2-enc --vfs-cache-mode writes --allow-other
+ExecStart=/usr/bin/rclone mount rclonestorage2-enc:/ /mnt/rclonestorage2-enc --vfs-cache-mode writes --cache-dir /mnt/d1/rclonecache --allow-other --azureblob-chunk-size 128M
 ExecStop=/bin/fusermount -u /mnt/rclonestorage2-enc
 Restart=always
 
 [Install]
 WantedBy=multi-user.target
 
-# sudo nano /etc/fuse.conf
+# sudo nano /etc/fuse.conf # uncomment user_allow_other
 # sudo nano /etc/systemd/system/rclone-azureblob.service
 # sudo systemctl enable rclone-azureblob
 # sudo systemctl start rclone-azureblob
