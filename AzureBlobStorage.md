@@ -1,4 +1,4 @@
-# SStorage exployer not opening browser to login
+# Storage not opening browser to login
 https://github.com/microsoft/AzureStorageExplorer/releases
 
 Appears to be a bug with latests reverted back to 1.33.0
