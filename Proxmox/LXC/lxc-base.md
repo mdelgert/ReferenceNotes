@@ -10,7 +10,7 @@ apt clean
 
 ### Name resolution 
 ```bash
-apt install avahi-daemon
+apt install avahi-daemon # Enable to allow network name resolution
 systemctl enable avahi-daemon
 systemctl start avahi-daemon
 ```
@@ -25,6 +25,19 @@ Add the following
 [Service]
 ExecStart=
 ExecStart=-/sbin/agetty --autologin root --noclear --keep-baud tty%I 115200,38400,9600 $TERM
+
+# Update locals
+```bash
+dpkg-reconfigure locales #select en_US.UTF-8 also set as default locale
+nano /etc/default/locale #add the following example
+locale-gen en_US.UTF-8 #regenerate the locale
+update-locale LANG=en_US.UTF-8
+reboot #apply the locals
+```
+
+LANG=en_US.UTF-8
+LANGUAGE=en_US:en
+LC_ALL=en_US.UTF-8
 
 # Export lxc template
 ```bash
