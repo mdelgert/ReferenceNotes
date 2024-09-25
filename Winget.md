@@ -23,6 +23,7 @@ JetBrains.Toolbox
 kapitainsky.RcloneBrowser
 LINQPad.LINQPad.7
 Logitech.OptionsPlus
+Microsoft.Azure.AZCopy.10
 Microsoft.Azure.StorageExplorer
 Microsoft.AzureCLI
 Microsoft.AzureDataStudio
