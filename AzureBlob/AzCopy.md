@@ -1,4 +1,12 @@
+### Links
+https://gist.github.com/jtabuloc/0b80cd55630dd4bdf426681c6be7382b (table copy not working)
+https://github.com/annajanicka/AzureTableStorageCopier
+https://github.com/TheByteStuff/AzureTableUtilities
 https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-blobs-upload?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&bc=%2Fazure%2Fstorage%2Fblobs%2Fbreadcrumb%2Ftoc.json
+
+###
+https://github.com/Azure/azure-storage-azcopy/issues/161
+AzCopy V10 does not support table copy, and probably will not, support copying table storage data. I'll let @EmmaZhu help you on the format issue with V7.3.
 
 **AzCopy** is a command-line utility provided by Microsoft to facilitate data transfer to and from Azure storage services. It's particularly useful for large-scale data operations like copying, moving, and syncing files between local directories and Azure Blob Storage, File Storage, or Table Storage. It can also help transfer data between Azure storage accounts.
 

@@ -1,6 +1,6 @@
 # Define variables for source and destination storage accounts
-$sourceAccount = "resticstorage2"
-$destinationAccount = "resticstorage3"
+$sourceAccount = "your_source_account"
+$destinationAccount = "your_destination_account"
 
 # Replace the following with the actual SAS tokens generated manually
 $sourceSAS = "your_source_sas_token"   # Replace with the SAS token for the source account
@@ -8,7 +8,7 @@ $destinationSAS = "your_destination_sas_token"  # Replace with the SAS token for
 
 # Define the log file location with a date-time stamp
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-$logFile = "C:\temp\azcopy_$timestamp.log"
+$logFile = "C:\Source\ReferenceNotes\Logs\azcopy_$timestamp.log"
 
 # Function to log messages to both console and log file
 function Log-Message {
