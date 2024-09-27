@@ -54,7 +54,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server' -Enabled True -Dire
 
    ```powershell
    icacls "$HOME\.ssh" /inheritance:r
-   icacls "$HOME\.ssh" /grant $env:USERNAME:`(F`)
+   icacls "$HOME\.ssh" /grant "$($env:USERNAME):(F)"
    ```
 
 4. Create the `authorized_keys` file inside the `.ssh` directory:
@@ -67,7 +67,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server' -Enabled True -Dire
 
    ```powershell
    icacls "$HOME\.ssh\authorized_keys" /inheritance:r
-   icacls "$HOME\.ssh\authorized_keys" /grant $env:USERNAME:`(F`)
+   icacls "$HOME\.ssh\authorized_keys" /grant "$($env:USERNAME):(F)"
    ```
 
 6. Add your public key to the `authorized_keys` file. You can either copy the contents of your public key or use PowerShell to append it:
