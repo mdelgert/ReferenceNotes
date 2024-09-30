@@ -58,3 +58,4 @@ XP89DCGQ3K6VLD (PowerToys (Preview) x64)
 XPDM27W10192Q0 (GIMP)
 Yubico.YubikeyManager
 Yubico.YubiKeyPersonalizationTool
+9WZDNCRFJ3PS (Microsoft Remote Desktop)
