@@ -1,55 +1,141 @@
-Wazuh is a powerful open-source security monitoring platform designed for threat detection, incident response, and compliance monitoring. It combines several important security features, making it a comprehensive solution for monitoring both system and network security in real-time. Here’s a detailed breakdown of its core features:
+Here’s a Wazuh `README.md` in Markdown format, covering installation and basic usage for a quick start.
 
-### 1. **Threat Detection and Vulnerability Management**
-   - **Threat Detection**: Wazuh provides real-time threat detection through its host-based intrusion detection system (HIDS). It monitors logs, file integrity, rootkit detection, and process information, providing alerts on suspicious activities and signs of potential intrusions.
-   - **Vulnerability Detection**: It includes vulnerability assessment capabilities to identify software vulnerabilities in real-time. It integrates with third-party databases, such as the National Vulnerability Database (NVD), to cross-reference software vulnerabilities with installed software.
-   - **CVE Detection**: Wazuh scans systems for installed software packages and checks them against the Common Vulnerabilities and Exposures (CVE) database, helping users address known vulnerabilities.
-   - **Active Response**: Wazuh can be configured to take automatic action in response to specific events, such as blocking an IP address after a failed login attempt. This is particularly helpful in mitigating brute-force attacks.
+```markdown
+# Wazuh
 
-### 2. **Log Data Analysis and SIEM Integration**
-   - **Log Collection and Analysis**: Wazuh collects logs from multiple sources, including system logs, application logs, and custom log files. It supports both agent-based and agentless collection, making it adaptable for various environments.
-   - **Parsing and Normalization**: Wazuh parses and normalizes logs into a standard format for easier analysis. This includes logs from cloud providers (AWS, Azure), network devices, applications, and operating systems.
-   - **Correlation and Analysis**: It integrates with Elasticsearch and Kibana to provide SIEM (Security Information and Event Management) capabilities. It correlates data from different sources, looking for patterns and identifying anomalies, making it easier to detect complex attack patterns.
-   - **Dashboards and Visualizations**: Using Kibana, Wazuh provides visualizations and dashboards for quick insights into security incidents and the status of monitored systems.
+Wazuh is a comprehensive security monitoring platform designed to detect threats, monitor infrastructure, ensure compliance, and respond to incidents. It offers endpoint detection and response (EDR), security information and event management (SIEM), and vulnerability detection functionalities.
 
-### 3. **File Integrity Monitoring (FIM)**
-   - **File Change Detection**: Wazuh monitors critical system files and directories, alerting you when any modifications (creations, deletions, or changes) are detected. This feature helps identify unauthorized or suspicious file changes.
-   - **Detailed Audit Logging**: Each file modification is logged with detailed information, such as the user who made the change, the time of the change, and the type of modification. These logs are essential for forensic analysis.
-   - **Policy Enforcement**: By configuring policies, you can specify which files and directories to monitor, helping to ensure compliance with organizational security standards.
+## Table of Contents
 
-### 4. **Security Configuration Assessment (SCA)**
-   - **Configuration Monitoring**: Wazuh assesses security configurations across various systems, applications, and services, helping to enforce security best practices.
-   - **Compliance Frameworks**: It supports multiple compliance frameworks, such as PCI-DSS, HIPAA, GDPR, and NIST. Wazuh can assess your environment against these standards, providing detailed reports and alerts on areas that fall short.
-   - **Automated Compliance Audits**: By continuously monitoring configuration changes, Wazuh can automate compliance audits, making it easier to maintain compliance and quickly detect configuration drift.
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### 5. **Incident Response and Rootkit Detection**
-   - **Active Response Actions**: Wazuh’s active response capabilities can automatically take action when a security incident occurs. This includes blocking IP addresses, killing malicious processes, and disabling user accounts, all in real-time.
-   - **Rootkit Detection**: Wazuh checks for rootkits (malicious software that conceals itself) by scanning for hidden processes, directories, and suspicious kernel modules. This feature is valuable for identifying advanced persistent threats (APTs) that attempt to hide within the system.
-   - **Real-Time Alerts**: Alerts can be configured to trigger notifications via email, Slack, or other communication tools, helping administrators respond to incidents promptly.
+## Features
 
-### 6. **Cloud Security and Container Monitoring**
-   - **Cloud Integration**: Wazuh integrates with major cloud providers like AWS, Microsoft Azure, and Google Cloud Platform. It collects security-related logs and metadata from these environments, monitoring for misconfigurations, unauthorized access, and unusual behavior.
-   - **Container Security**: Wazuh monitors Docker and Kubernetes environments, allowing it to detect security issues specific to containerized applications. It audits Docker images, containers, and orchestrator configurations to ensure security best practices are followed.
+- **Threat detection**: Analyze and detect threats across multiple endpoints.
+- **Compliance**: Ensure your environment complies with various regulatory standards.
+- **Incident response**: Quickly respond to security incidents.
+- **Vulnerability assessment**: Discover and track vulnerabilities in your infrastructure.
+- **Centralized logging**: Collect and analyze logs from multiple sources.
 
-### 7. **Endpoint Detection and Response (EDR)**
-   - **Process Monitoring**: Wazuh can monitor and log all running processes and open network connections on endpoints. This provides insights into suspicious processes, abnormal CPU or memory usage, and potentially malicious activities.
-   - **User Activity Monitoring**: Wazuh tracks user logins, logout events, privilege escalations, and other user actions. This is useful for detecting unauthorized access and insider threats.
-   - **Anomaly Detection**: Wazuh uses machine learning techniques to identify anomalies in user and process behavior, providing early warnings of potential threats.
+## Requirements
 
-### 8. **Scalability and Centralized Management**
-   - **Scalable Architecture**: Wazuh can scale across large environments, supporting thousands of monitored systems and managing them from a central Wazuh Manager.
-   - **Centralized Management Console**: The Wazuh console provides centralized management for all monitored systems, including agent deployment, configuration, policy enforcement, and alert management.
-   - **Role-Based Access Control (RBAC)**: Wazuh’s management interface includes role-based access control to ensure that only authorized personnel can access sensitive data and configurations.
+- **Operating System**: Wazuh supports Linux, Windows, and macOS agents. The Wazuh server can run on Linux distributions.
+- **Memory**: Minimum 4GB RAM
+- **Storage**: Minimum 20GB free disk space
+- **Database**: Elasticsearch, OpenSearch, or similar
 
-### 9. **Community and Extensibility**
-   - **Community Support**: Wazuh has a robust open-source community and frequent updates. A wide range of community-contributed plugins and integrations are also available.
-   - **Custom Rules and Plugins**: Wazuh is highly configurable and allows users to write custom rules, decoders, and plugins, tailoring the platform to specific use cases or security requirements.
+## Installation
 
-### Summary of Key Benefits
-   - **Comprehensive Security**: Covers all critical aspects of security monitoring, from file integrity and vulnerability management to endpoint and network monitoring.
-   - **Integration with SIEM**: Works with Elasticsearch and Kibana to provide a full-featured SIEM solution.
-   - **Automation and Response**: Includes active response capabilities to automate incident response.
-   - **Compliance Reporting**: Facilitates compliance with security standards and generates audit reports for security and regulatory needs.
-   - **Scalability**: Scales well for homelab and enterprise environments alike, making it adaptable for any network size.
+Wazuh can be installed in different configurations:
 
-Wazuh’s feature set makes it a top choice for homelab users and enterprises alike looking for a comprehensive, open-source solution to enhance their security monitoring and incident response capabilities.
+### 1. Install Wazuh All-in-One
+
+The All-in-One configuration is a good starting point for small to medium environments. This setup installs all components (Wazuh server, Elasticsearch/OpenSearch, and Wazuh Dashboard) on a single machine.
+
+```bash
+curl -sO https://packages.wazuh.com/4.x/wazuh-install.sh
+bash ./wazuh-install.sh -a
+```
+
+For specific configurations (i.e., multi-server environments), refer to the [Wazuh documentation](https://documentation.wazuh.com).
+
+### 2. Install Wazuh in Distributed Architecture
+
+For scalability and performance in larger environments, deploy each Wazuh component (Manager, Indexer, and Dashboard) on separate servers.
+
+#### Step 1: Install the Wazuh Manager
+
+```bash
+curl -sO https://packages.wazuh.com/4.x/wazuh-install.sh
+bash ./wazuh-install.sh -m
+```
+
+#### Step 2: Install the Indexer (Elasticsearch or OpenSearch)
+
+Follow the steps in the official documentation to install and configure your preferred indexer.
+
+#### Step 3: Install the Wazuh Dashboard
+
+```bash
+curl -sO https://packages.wazuh.com/4.x/wazuh-install.sh
+bash ./wazuh-install.sh -d
+```
+
+### 3. Adding Agents
+
+To monitor endpoints, install the Wazuh agent on each one:
+
+#### On Linux:
+
+```bash
+curl -sO https://packages.wazuh.com/4.x/wazuh-agent.sh
+bash ./wazuh-agent.sh
+```
+
+#### On Windows:
+
+Download the agent installer from the [Wazuh download page](https://documentation.wazuh.com) and follow the setup instructions.
+
+#### Connecting Agent to the Manager
+
+After installation, configure the agent to connect to the Wazuh manager by modifying the agent's configuration file (`ossec.conf`) and restarting the agent.
+
+## Configuration
+
+### Configure Wazuh Manager
+
+Edit `/var/ossec/etc/ossec.conf` to customize manager settings.
+
+### Configure Wazuh Dashboard
+
+Access the Dashboard on `https://<server-ip>:5601` and configure settings for optimal viewing and security.
+
+### Configure Agents
+
+Modify `/var/ossec/etc/ossec.conf` on each agent as needed, or use the Wazuh Dashboard to manage agents.
+
+## Usage
+
+### Accessing the Dashboard
+
+1. Open your browser and go to `https://<wazuh-server-ip>:5601`.
+2. Log in with your credentials.
+
+### Common Commands
+
+- **Start Wazuh manager**:
+  ```bash
+  sudo systemctl start wazuh-manager
+  ```
+
+- **Start Wazuh agent**:
+  ```bash
+  sudo systemctl start wazuh-agent
+  ```
+
+- **Check Wazuh manager status**:
+  ```bash
+  sudo systemctl status wazuh-manager
+  ```
+
+- **Check Wazuh agent status**:
+  ```bash
+  sudo systemctl status wazuh-agent
+  ```
+
+## Contributing
+
+Contributions to Wazuh are welcome! Please check the [contributing guidelines](https://documentation.wazuh.com/current/development/contributing.html) for more details.
+
+## License
+
+Wazuh is open-source software, licensed under the GPLv2. See the [LICENSE](https://github.com/wazuh/wazuh/blob/master/LICENSE) file for more information.
+```
+
+This `README.md` provides a basic installation guide and steps for setting up Wazuh, configuring agents, and accessing the dashboard. For detailed setup and advanced configurations, you may refer to the official [Wazuh documentation](https://documentation.wazuh.com).
