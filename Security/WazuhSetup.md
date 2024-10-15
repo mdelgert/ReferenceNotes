@@ -38,8 +38,6 @@ Wazuh can be installed in different configurations:
 
 The All-in-One configuration is a good starting point for small to medium environments. This setup installs all components (Wazuh server, Elasticsearch/OpenSearch, and Wazuh Dashboard) on a single machine.
 
-https://documentation.wazuh.com/current/installation-guide/wazuh-server/installation-assistant.html
-
 ```bash
 curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh
 bash ./wazuh-install.sh -a
