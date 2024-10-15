@@ -1,13 +1,13 @@
 # Configuration
-$host = "192.168.50.240"            # Replace with the IP of your SSH server
-$username = "HackWell"          # Invalid username for brute-force testing
-$password = "invalid_password"      # Invalid password for brute-force testing
-$attempts = 1000                      # Number of failed login attempts
-$port = 22                          # SSH port (default is 22)
+$sshHost = "192.168.50.240"           # Replace with the IP of your SSH server
+$username = "HackWell"                # Invalid username for brute-force testing
+$password = "invalid_password"        # Invalid password for brute-force testing
+$attempts = 1000                        # Number of failed login attempts
+$port = 22                            # SSH port (default is 22)
 
 # Function to attempt SSH connection
 function Attempt-SSHConnection {
-    $command = "ssh -o StrictHostKeyChecking=no -o ConnectTimeout=3 $username@$host exit"
+    $command = "ssh -o StrictHostKeyChecking=no -o ConnectTimeout=3 $username@$sshHost exit"
     $process = Start-Process -FilePath "cmd.exe" -ArgumentList "/c echo $password | $command" -NoNewWindow -PassThru
     $process.WaitForExit()
     if ($process.ExitCode -ne 0) {
