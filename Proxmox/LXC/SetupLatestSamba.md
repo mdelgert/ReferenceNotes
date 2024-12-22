@@ -6,8 +6,7 @@ pct list
 pct start <container_id>
 pct enter <container_id>
 apt update
-apt install samba wsdd 
-#libnss-mdns #works without but keeping it
+apt install samba wsdd
 cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
 truncate -s 0 /etc/samba/smb.conf #clear everything use example smb.conf
 nano /etc/samba/smb.conf #see smb.conf as example

@@ -67,6 +67,7 @@ ExecStart=-/sbin/agetty --autologin root --noclear --keep-baud tty%I 115200,3840
 # Export lxc template
 ```bash
 pct list
+pct fsck 100 # (Optional) Check filesystem
 vzdump 100 --dumpdir /var/lib/vz/template/cache --compress zstd
 cd /var/lib/vz/template/cache
 rm dumpfile.log
