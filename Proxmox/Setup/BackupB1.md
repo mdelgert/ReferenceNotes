@@ -1,4 +1,4 @@
-rsync -avz /home/mdelgert/shared/source/ root@b2:/home/mdelgert/source
+rsync -avz /home/mdelgert/shared/ mdelgert@vm-d1:/home/mdelgert/shared
 
 To use `rsync` to copy a directory from one Linux server to another, follow these steps:
 

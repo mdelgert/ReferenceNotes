@@ -18,9 +18,9 @@ exit
 smbpasswd -a mdelgert
 systemctl start smbd #or systemctl restart smb
 systemctl enable smbd
-# Latest wsdd did not download wsdd.service manually pulling from github
-cd /etc/systemd/system/
-wget https://raw.githubusercontent.com/christgau/wsdd/refs/heads/master/etc/systemd/wsdd.service
+# Latest wsdd did not download wsdd.service for ubuntu only but debian is working without this step below!
+#cd /etc/systemd/system/
+#wget https://raw.githubusercontent.com/christgau/wsdd/refs/heads/master/etc/systemd/wsdd.service
 systemctl start wsdd #enable windows network browser
 systemctl enable wsdd
 wsdd --version
