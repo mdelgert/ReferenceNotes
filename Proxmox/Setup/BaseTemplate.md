@@ -15,9 +15,9 @@ sudo dpkg-reconfigure locales # select en_US.UTF-8
 ```bash
 sudo nano /etc/default/locale 
 #Add the following lines
-#LANG="en_US.UTF-8"
-#LANGUAGE="en_US:en"
-#LC_ALL="en_US.UTF-8"
+LANG="en_US.UTF-8"
+LANGUAGE="en_US:en"
+LC_ALL="en_US.UTF-8"
 sudo reboot
 locale -a # check local after reboot
 ```
@@ -68,7 +68,7 @@ ExecStart=-/sbin/agetty --autologin root --noclear --keep-baud tty%I 115200,3840
 ```bash
 pct list
 pct fsck 100 # (Optional) Check filesystem
-vzdump 100 --dumpdir /var/lib/vz/template/cache --compress zstd
+vzdump 102 --dumpdir /var/lib/vz/template/cache --compress zstd
 cd /var/lib/vz/template/cache
 rm dumpfile.log
 mv dumpfile.tar.zst example.tar.zst
