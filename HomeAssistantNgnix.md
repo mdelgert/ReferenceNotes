@@ -57,6 +57,10 @@ To add Home Assistant to Nginx Proxy Manager (NPM) using the web interface, foll
 - If proxmox script in docker this is the path
 nano /var/lib/docker/volumes/hass_config/_data/configuration.yaml
 
+- I had issues and need to clear my browser cache data during setup like I had with ngnix login issues
+- Edge I did not have this issue may be a bug with current version
+https://community.home-assistant.io/t/login-page-over-and-over/83522
+
 ```yaml
 # Loads default set of integrations. Do not remove.
 default_config:
