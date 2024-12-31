@@ -60,6 +60,7 @@ nano /var/lib/docker/volumes/hass_config/_data/configuration.yaml
 - I had issues and need to clear my browser cache data during setup like I had with ngnix login issues
 - Edge I did not have this issue may be a bug with current version
 https://community.home-assistant.io/t/login-page-over-and-over/83522
+- May need to setup a new instance without proxmox installer scripts and or may want to test with full homeos
 
 ```yaml
 # Loads default set of integrations. Do not remove.
