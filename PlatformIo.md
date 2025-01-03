@@ -6,6 +6,8 @@ Run platform IO home in browser
 ```bash
 pio home --no-open
 pio home # To launch
+sudo lsof -i :8008
+kill id
 ```
 
 Update vscode file 
