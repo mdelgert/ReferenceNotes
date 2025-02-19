@@ -132,3 +132,113 @@ az account set --subscription "Subscription Name"
 - Use `az account set` to select a specific subscription within that tenant.
 
 This method works for both interactive and service principal logins.
+
+To set a specific Azure subscription using the Azure CLI, use the following command:
+
+### **1. List Available Subscriptions**
+```bash
+az account list --output table
+```
+This lists all subscriptions you have access to, showing their `Name`, `Id`, and `State`.
+
+---
+
+### **2. Set Subscription by ID**
+```bash
+az account set --subscription SUBSCRIPTION_ID
+```
+Replace `SUBSCRIPTION_ID` with the actual subscription ID from the previous command.
+
+Example:
+```bash
+az account set --subscription 12345678-1234-1234-1234-123456789abc
+az account set --subscription
+```
+
+---
+
+### **3. Set Subscription by Name**
+```bash
+az account set --subscription "Subscription Name"
+```
+Replace `"Subscription Name"` with the exact name of your subscription.
+
+Example:
+```bash
+az account set --subscription "My Production Subscription"
+```
+
+---
+
+### **4. Verify the Current Subscription**
+```bash
+az account show --query "[name, id]" --output table
+```
+This will show the name and ID of the currently active subscription, confirming the switch.
+
+---
+
+### ✅ **Summary**
+- Use `az account list` to find your subscriptions.
+- Use `az account set --subscription` to switch subscriptions.
+- Use `az account show` to verify the change.
+
+This approach works for both interactive users and service principals.
+
+Yes, Azure Cloud Shell provides persistent storage using an Azure file share. When you launch Cloud Shell for the first time, you're prompted to create a storage account and a file share. Here’s how persistence works and how you can manage it:
+
+### 🔒 **How Persistence Works:**
+- **File Share:** Files are stored in an Azure Storage account as a file share using Azure Files.  
+- **Mounted at `/home/<username>`:** The share is automatically mounted to your Cloud Shell session at the home directory (`/home/<username>`).  
+- **Persistence Across Sessions:** Any files stored in your home directory persist between sessions.
+
+---
+
+### 💾 **If You Haven't Set Up Persistence:**
+1. **Automatic Prompt:** The first time you use Cloud Shell, it prompts you to create a file share. Follow the prompts to set it up.
+2. **Manual Setup:** You can manually configure persistence by running:
+   ```bash
+   az storage account create --name <storage_account_name> --resource-group <resource_group> --location <location> --sku Standard_LRS
+   az storage share create --account-name <storage_account_name> --name <file_share_name>
+   ```
+
+---
+
+### 📂 **Accessing Files:**
+- Files saved in `/home/<username>` are persistent.
+- For example:
+  ```bash
+  echo "Hello Azure Cloud Shell" > myfile.txt
+  cat myfile.txt
+  ```
+
+---
+
+### 🗂 **Upload/Download Files:**
+- Use the **Upload/Download** buttons in the Cloud Shell toolbar.
+- Or use CLI commands like:
+  ```bash
+  # Upload
+  az storage file upload --account-name <storage_account_name> --share-name <file_share_name> --source <local_file_path>
+
+  # Download
+  az storage file download --account-name <storage_account_name> --share-name <file_share_name> --path <file_path_in_share> --dest <local_path>
+  ```
+
+---
+
+### 🧹 **Cleaning Up:**
+If you no longer need persistence, delete the file share and/or storage account:
+```bash
+az storage share delete --account-name <storage_account_name> --name <file_share_name>
+az storage account delete --name <storage_account_name> --resource-group <resource_group>
+```
+
+---
+
+### ✅ **Summary:**
+- Files in `/home/<username>` persist across sessions.
+- Files outside `/home` are not persistent.
+- The persistence is backed by Azure Files, ensuring your files are available in all future Cloud Shell sessions.
+
+Let me know if you need step-by-step instructions specific to Bash or PowerShell environments! 😊
