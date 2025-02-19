@@ -77,3 +77,58 @@ To filter specific tenant information:
 az account tenant list --query "[].{TenantId:id, Name:displayName}" --output table
 ```
 This displays only the tenant ID and display name for a cleaner output.
+
+To switch between different tenants using the Azure CLI, follow these steps:
+
+---
+
+### **1. List Available Tenants**  
+First, list all tenants associated with your account:  
+```bash
+az account tenant list --output table
+```
+Note the `TenantId` of the tenant you want to switch to.
+
+---
+
+### **2. Switch Tenant Using `az login`**  
+Use the `az login` command with the `--tenant` option:  
+```bash
+az login --tenant TENANT_ID
+```
+Replace `TENANT_ID` with the actual tenant ID from the previous step.  
+Example:  
+```bash
+az login --tenant 12345678-1234-1234-1234-123456789abc
+```
+This will re-authenticate you under the selected tenant.
+
+---
+
+### **3. Verify the Current Tenant**  
+Check the currently active tenant with:  
+```bash
+az account show --query "tenantId"
+```
+This confirms that you've successfully switched to the intended tenant.
+
+---
+
+### **4. Optional: Use a Specific Subscription in the Tenant**  
+If you need to switch to a particular subscription within that tenant, use:  
+```bash
+az account set --subscription SUBSCRIPTION_ID
+```
+or by subscription name:  
+```bash
+az account set --subscription "Subscription Name"
+```
+
+---
+
+### ✅ **Summary:**  
+- Use `az login --tenant TENANT_ID` to switch tenants.  
+- Use `az account show` to verify the active tenant.  
+- Use `az account set` to select a specific subscription within that tenant.
+
+This method works for both interactive and service principal logins.
