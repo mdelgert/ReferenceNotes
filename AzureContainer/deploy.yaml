@@ -1,0 +1,24 @@
+---
+properties:
+  managedEnvironmentId: your-managed-environment-id
+  configuration:
+    ingress:
+      external: true
+      targetPort: 8080
+    storage:
+      - name: ct1store1
+        storageType: AzureFile
+        azureFile:
+          accountName: ct1store1
+          shareName: ct1share
+          accessMode: ReadWrite
+  template:
+    containers:
+      - image: ghcr.io/open-webui/open-webui:main
+        name: ow1
+        volumeMounts:
+          - volumeName: ct1store1
+            mountPath: /app/backend/data
+    volumes:
+      - name: ct1store1
+        storageName: ct1store1
