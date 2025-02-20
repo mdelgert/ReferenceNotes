@@ -9,3 +9,9 @@ az containerapp show \
     --name openwebui-app1 \
     --resource-group rg-openwebui1 \
     --output yaml > secure.yaml
+
+# Links
+https://www.youtube.com/watch?v=Zr63iwQLruk&t=208s
+https://www.youtube.com/watch?v=2xCrYkWgHKc&t=1s
+https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files?tabs=bash
+https://github.com/KamalRathnayake/MeetKamalToday./blob/main/94-container-apps-storage-mounts/template-demo.json
