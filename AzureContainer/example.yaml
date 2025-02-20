@@ -1,0 +1,37 @@
+  template:
+    containers:
+    - image: ghcr.io/ghcr.io/open-webui/open-webui:main
+      name: ctow1
+      probes: []
+      resources:
+        cpu: 2
+        ephemeralStorage: 8Gi
+        memory: 4Gi
+      volumeMounts:
+      - mountPath: /app/backend/data
+        volumeName: azure-files-volume
+    initContainers:
+    - command:
+      - sh
+      - -c
+      - mkdir -p /app/backend/data && chown -R 1000:1000 /app/backend/data
+      image: busybox
+      name: init-volume
+      resources:
+        cpu: 0.5
+        ephemeralStorage: 2Gi
+        memory: 1Gi
+    revisionSuffix: ''
+    scale:
+      maxReplicas: 10
+      minReplicas: 1
+      rules: null
+    serviceBinds: null
+    terminationGracePeriodSeconds: null
+    volumes:
+    - mountOptions: dir_mode=0777,file_mode=0777,uid=1000,gid=1000,mfsymlinks,nobrl,cache=none
+      name: azure-files-volume
+      storageName: ct1store1
+      storageType: AzureFile
+  workloadProfileName: Consumption
+resourceGroup: rg-ct1
