@@ -1,0 +1,27 @@
+ template:
+    containers:
+    - image: ghcr.io/open-webui/open-webui:main
+      name: openwebui-app1
+      volumeMounts:
+      - mountPath: /app/backend/data
+        volumeName: azure-files-volume
+      probes: []
+      resources:
+        cpu: 2
+        ephemeralStorage: 8Gi
+        memory: 4Gi
+    initContainers: null
+    revisionSuffix: ''
+    scale:
+      maxReplicas: 10
+      minReplicas: 0
+      rules: null
+    serviceBinds: null
+    terminationGracePeriodSeconds: null
+    volumes:
+    - mountOptions: dir_mode=0777,file_mode=0777,uid=1000,gid=1000,mfsymlinks,nobrl,cache=none
+      name: azure-files-volume
+      storageName: openwebuishare1
+      storageType: AzureFile
+  workloadProfileName: Consumption
+resourceGroup: rg-openwebui1
