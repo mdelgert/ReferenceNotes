@@ -1,3 +1,9 @@
+# AI Server
+https://api.groq.com/openai/v1
+
+# Add Groc
+https://github.com/open-webui/open-webui/discussions/974
+
 # Azure Container Apps: Volume mount fails with "Permission Denied" error
 https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files?tabs=bash
 https://learn.microsoft.com/en-us/answers/questions/1307934/azure-container-apps-volume-mount-fails-with-permi
