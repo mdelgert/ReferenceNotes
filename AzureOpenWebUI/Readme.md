@@ -1,8 +1,13 @@
 # AI Server
 https://api.groq.com/openai/v1
 
+# Add Google PSE
+https://programmablesearchengine.google.com/controlpanel/all
+https://developers.google.com/custom-search/v1/introduction
+
 # Add Groc
 https://github.com/open-webui/open-webui/discussions/974
+https://www.youtube.com/watch?v=qOxsIlpIMt4
 
 # Azure Container Apps: Volume mount fails with "Permission Denied" error
 https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files?tabs=bash
