@@ -1,3 +1,4 @@
+https://medium.com/data-science-at-microsoft/how-to-mount-azure-blob-storage-to-your-local-windows-or-virtual-linux-machines-even-with-disabled-3008aeec3da8
 https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-how-to-deploy?tabs=Ubuntu
 https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configuration
 https://github.com/Azure/azure-storage-fuse/blob/main/setup/baseConfig.yaml
