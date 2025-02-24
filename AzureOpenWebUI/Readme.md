@@ -22,6 +22,7 @@ az containerapp show \
     --output yaml > secure.yaml
 
 # Links
+https://blakedrumm.com/blog/azure-container-apps-openweb-ui/
 https://www.youtube.com/watch?v=Zr63iwQLruk&t=208s
 https://www.youtube.com/watch?v=2xCrYkWgHKc&t=1s
 https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files?tabs=bash
