@@ -1,7 +1,6 @@
 # Change email address in Git
 https://stackoverflow.com/questions/37805621/change-email-address-in-git
 
-
 ```bash
 git config --global user.name "John Doe"  
 git config --global user.email johndoe@example.com  
