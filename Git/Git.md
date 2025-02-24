@@ -1,6 +1,10 @@
+# Actual command not found, wanted to execute git.sync /8
+https://github.com/microsoft/vscode/issues/170117
+https://github.com/microsoft/vscode/issues/170117#issuecomment-1369572211
+https://stackoverflow.com/questions/71201591/vscode-git-sync-keeps-executing-with-wrong-arguments
+
 # Change email address in Git
 https://stackoverflow.com/questions/37805621/change-email-address-in-git
-
 
 ```bash
 git config --global user.name "John Doe"  
