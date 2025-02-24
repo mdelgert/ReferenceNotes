@@ -1,0 +1,1 @@
+az containerapp update --name ca2 --resource-group rg-ce1 --yaml secure.yaml
