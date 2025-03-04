@@ -1,3 +1,6 @@
+### Winget install
+winget install Microsoft.OpenSSH.Preview
+
 Related article on [Windows OS Hub](https://woshub.com/using-ssh-key-based-authentication-on-windows/)【18†source】【19†source】.
 
 ### 1. **Enable the SSH Server Feature**
