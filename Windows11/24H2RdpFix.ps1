@@ -18,6 +18,8 @@ Set-ItemProperty -Path $RegPath -Name "fTurnOffTimeDetect" -Type DWord -Value 1
 
 Set-ItemProperty -Path $RegPath -Name "fTurnOffNetworkDetect" -Type DWord -Value 1
 
+Set-ItemProperty -Path $RegPath -Name "SelectNetworkDetect" -Type DWord -Value 3
+
 # Confirm changes
 
 Write-Host "Network detection policies applied. A reboot may be required for changes to take effect."
