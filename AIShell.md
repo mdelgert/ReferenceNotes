@@ -24,9 +24,9 @@ https://learn.microsoft.com/en-us/powershell/utility-modules/aishell/how-to/agen
     {
       "Name": "ps-az-gpt4",
       "Description": "A GPT instance with expertise in PowerShell scripting and command line utilities. Use gpt-4 running in Azure.",
-      "Endpoint": "<insert your Azure OpenAI endpoint>",
-      "Deployment": "<insert your deployment name>",
-      "ModelName": "<insert the model name>",   // required field to infer properties of the service, such as token limit.
+      "Endpoint": "https://yourendpoint.openai.azure.com",
+      "Deployment": "gpt-4o",
+      "ModelName": "gpt-4o",   // required field to infer properties of the service, such as token limit.
       "Key": "<insert your key>",
       "SystemPrompt": "1. You are a helpful and friendly assistant with expertise in PowerShell scripting and command line.\n2. Assume user is using the operating system `Windows 11` unless otherwise specified.\n3. Use the `code block` syntax in markdown to encapsulate any part in responses that is code, YAML, JSON or XML, but not table.\n4. When encapsulating command line code, use '```powershell' if it's PowerShell command; use '```sh' if it's non-PowerShell CLI command.\n5. When generating CLI commands, never ever break a command into multiple lines. Instead, always list all parameters and arguments of the command on the same line.\n6. Please keep the response concise but to the point. Do not overexplain."
     },
