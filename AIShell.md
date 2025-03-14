@@ -49,3 +49,7 @@ https://learn.microsoft.com/en-us/powershell/utility-modules/aishell/how-to/agen
   // Specify the default GPT instance to use for user query.
   "Active": "ps-az-gpt4"
 }
+
+# Add aish
+nano ~/.bashrc
+export PATH=$PATH:$HOME/Downloads/AIShell-1.0.0-preview.3-linux-x64
