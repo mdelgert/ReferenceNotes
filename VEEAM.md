@@ -5,6 +5,7 @@ https://www.veeam.com/agent-for-windows-community-edition.html
 https://community.hetzner.com/tutorials/getting-started-with-veeam/installing-the-veeam-agent-for-linux
 https://www.veeam.com/products/free/linux-download.html
 https://helpcenter.veeam.com/docs/agentforlinux/userguide/installation_val.html?ver=60#dep
+https://phoenixnap.com/kb/install-vmware-workstation-ubuntu
 
 ```bash
 sudo dpkg -i ./veeam-release*
