@@ -1,3 +1,6 @@
+### Linux bootable media does not work with Secure boot
+https://community.veeam.com/discussion-boards-66/linux-bootable-media-does-not-work-with-secure-boot-4136
+
 ### Veeam Agent for Microsoft Windows
 https://www.veeam.com/agent-for-windows-community-edition.html
 
