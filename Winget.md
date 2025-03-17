@@ -1,3 +1,9 @@
+### Upgrade winget
+```ps
+Add-AppxPackage -Path 'https://github.com/microsoft/winget-cli/releases/download/v1.10.340/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -ForceApplicationShutdow
+```
+https://wrye.dev/posts/upgrade-winget-itself
+
 ### Winget
 https://github.com/microsoft/winget-cli
 https://www.microsoft.com/p/app-installer/9nblggh4nns1
