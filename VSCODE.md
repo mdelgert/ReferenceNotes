@@ -1,3 +1,9 @@
+### SQL Script Compare
+https://marketplace.visualstudio.com/items?itemName=JohanselSantos.sql-script-compare
+
+### SQLTools
+https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools
+
 ### REST Client Extension
 Yes, there are several Visual Studio Code (VSCode) extensions designed to help you test and send REST API requests directly from the editor. One of the most popular ones is **REST Client**. Here’s a bit more detail:
 
