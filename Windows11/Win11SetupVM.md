@@ -20,3 +20,7 @@ sfc /scannow
 ```ps
 wevtutil el | ForEach-Object { wevtutil cl "$_" }
 ```
+
+### Disable Faulty Device Drivers
+https://helpdeskgeek.com/how-to-fix-the-memory-integrity-is-off-issue-on-windows-11/
+https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
