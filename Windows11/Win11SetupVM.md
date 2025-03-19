@@ -3,6 +3,8 @@ https://community.intel.com/t5/Processors/Memory-Integrity-in-Core-Isolation-is-
 
 https://www.howtogeek.com/fix-memory-integrity-errors-on-windows-11/
 
+https://www.yourwindowsguide.com/2022/09/fix-memory-integrity-due-to-incompatible-drivers-cannot-be-enabled.html#.YxDaFHZBy3A
+
 ### Delete olde driver
 https://answers.microsoft.com/en-us/windows/forum/all/memory-integrity-off-because-of-incompatible/addad2e4-ef42-4483-83af-94cfcfe6e32e
 
