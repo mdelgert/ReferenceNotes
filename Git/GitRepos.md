@@ -81,6 +81,20 @@ Edit `~/.gitconfig`:
 
 [includeIf "gitdir:~/projects/second/"]
     path = ~/.gitconfig-second
+
+# Windows absolute paths paths
+[includeIf "gitdir:/c/Users/JohnDoe/projects/primary/"]
+    path = /c/Users/JohnDoe/.gitconfig-primary
+
+[includeIf "gitdir:/c/Users/JohnDoe/projects/second/"]
+    path = /c/Users/JohnDoe/.gitconfig-second
+
+# Mixed mode
+[includeIf "gitdir:/c/Source/primary/"]
+    path = ~/.gitconfig-primary
+
+[includeIf "gitdir:/c/Source/second/"]
+    path = ~/.gitconfig-second
 ```
 
 Create `~/.gitconfig-primary`:
