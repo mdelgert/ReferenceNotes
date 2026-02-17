@@ -1,9 +1,0 @@
-# /etc/apt/sources.list
-
-deb http://ftp.us.debian.org/debian bookworm main contrib
-
-deb http://ftp.us.debian.org/debian bookworm-updates main contrib
-
-# security updates
-deb http://security.debian.org bookworm-security main contrib
-

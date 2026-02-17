@@ -1,2 +1,0 @@
-https://www.jpaul.me/2020/09/how-to-use-a-cloudflare-api-token-for-letsencrypt-validation-on-ubuntu-20-04/
-https://claudiu.psychlab.eu/post/homelab-4-install-and-configure-nginx-proxy-manager-with-ssl-wildcard-certs/

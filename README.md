@@ -1,4 +1,3 @@
 # ReferenceNotes
-Misc. markdown reference notes
 
-[ReferenceNotes](https://vscode.dev/github/mdelgert/ReferenceNotes)
+This repository has moved to a private repository.

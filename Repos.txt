@@ -1,5 +1,0 @@
-https://github.com/sibtc/django-multiple-user-types-example
-https://github.com/app-generator/sample-flask-bootstrap
-https://davesteele.github.io/raspberrypi/2021/04/18/keyboard-jiggler/
-https://github.com/raspberrypisig/pizero-usb-hid-keyboard
-https://gist.githubusercontent.com/davesteele/276a17315cff728bb5932c59329da850/raw/f3b4912418679e095be82a81acd05d557448449c/tickle.py

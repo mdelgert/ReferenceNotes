@@ -1,3 +1,0 @@
-# deb https://enterprise.proxmox.com/debian/pbs bookworm pbs-enterprise
-
-deb http://download.proxmox.com/debian/pbs bookworm pbs-no-subscription

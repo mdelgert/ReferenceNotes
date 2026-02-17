@@ -1,7 +1,0 @@
-# Example /etc/wsl.conf
-
-[boot]
-systemd = true
-
-[user]
-default = mdelgert
